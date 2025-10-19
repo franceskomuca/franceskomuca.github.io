@@ -1,0 +1,353 @@
+:root{
+  --bg-overlay: rgba(0,0,0,0.35);
+  --accent: #fff;
+  --muted: rgba(255,255,255,0.85);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%}
+body{font-family: 'Montserrat', Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; background:#000;color:var(--accent)}
+.brand{font-weight:700}
+.links .btn{font-weight:600}
+.video-wrap{position:relative;height:100vh;overflow:hidden}
+video#bg-video{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);min-width:100%;min-height:100%;width:auto;height:auto;z-index:0;filter:brightness(.7) saturate(.95);object-fit:cover}
+.yt-bg{position:absolute;inset:0;overflow:hidden;z-index:0}
+.yt-bg iframe{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:177.78vh;height:100vh;min-width:100vw;min-height:56.25vw;pointer-events:none;filter:brightness(.75) saturate(.95)}
+
+/* masks to cover transient YouTube UI elements while iframe initializes */
+.yt-mask{position:absolute;left:0;right:0;height:90px;z-index:4;background:#000;opacity:1;pointer-events:none;transition:opacity 2s ease}
+.yt-mask.top{top:0}
+.yt-mask.bottom{bottom:0}
+
+@keyframes ytMaskFade{
+  from{opacity:1}
+  to{opacity:0}
+}
+
+/* Full-screen mask with spinner */
+.yt-mask.full{top:0;bottom:0;height:auto;z-index:6;background:#000;opacity:1}
+/* spinner removed for fully black initial screen */
+.overlay{position:relative;z-index:5;display:flex;flex-direction:column;align-items:center;justify-content:center;height:100%;text-align:center;padding:2rem;background:linear-gradient(to bottom, rgba(0,0,0,0.15), rgba(0,0,0,0.45))}
+.brand{font-size:clamp(1.6rem,5vw,3rem);letter-spacing:0.06em;margin-bottom:0.8rem;color:var(--accent);text-shadow:0 6px 18px rgba(0,0,0,0.6);font-weight:600}
+.links{display:flex;gap:1rem}
+.btn{display:inline-block;padding:0.18rem 0.36rem;color:var(--muted);text-decoration:none;background:transparent;border:none;font-weight:500;font-size:0.98rem;transition:color .12s ease}
+.btn:hover{color:var(--accent)}
+
+/* first-visit subtle fade-in for hero text */
+@keyframes fadeInUp{
+  from{opacity:0;transform:translateY(8px)}
+  to{opacity:1;transform:translateY(0)}
+}
+
+/* apply animation only on the first visit (body.first-visit is set by JS)
+   we remove the class after animation in JS so the state won't persist visually */
+html.first-visit .overlay .brand{opacity:0;animation:fadeInUp .7s .12s ease forwards}
+html.first-visit .overlay .links{opacity:0;animation:fadeInUp .7s .32s ease forwards}
+
+/* also animate primary headings on other pages on first visit */
+html.first-visit .about-box h2{opacity:0;animation:fadeInUp .7s .12s ease forwards}
+html.first-visit .contact-form h3{opacity:0;animation:fadeInUp .7s .12s ease forwards}
+
+
+/* Top-right icon nav */
+.top-right-nav{position:fixed;top:18px;right:18px;display:flex;gap:12px;z-index:9999}
+.top-right-nav .lang-toggle{margin-left:12px}
+.top-right-nav .lang-toggle{margin-left:auto}
+.top-right-nav .icon{display:inline-flex;align-items:center;justify-content:center;color:var(--muted);text-decoration:none;background:transparent;border:none;padding:4px;transition:color .14s ease,transform .14s ease}
+.top-right-nav .icon:hover{color:var(--accent);transform:translateY(-2px)}
+.top-right-nav .textlink{display:inline-flex;align-items:center;gap:8px;padding:0;color:var(--muted);text-decoration:none;font-weight:600;background:transparent;border:none;transition:color .12s ease,transform .12s ease}
+.top-right-nav .textlink:hover{color:var(--accent);transform:translateY(-2px)}
+.top-right-nav .lang-toggle{display:inline-flex;gap:6px;align-items:center;padding:6px 8px;border-radius:6px;background:rgba(255,255,255,0.02);color:var(--muted);font-weight:600}
+.top-right-nav .lang-toggle .flag{font-size:14px;line-height:1}
+.top-right-nav .lang-toggle:hover{background:rgba(255,255,255,0.04);color:var(--accent)}
+.top-right-nav svg{display:block;width:20px;height:20px}
+
+@media (max-width:560px){
+  .top-right-nav{right:10px;gap:8px}
+  .top-right-nav .icon{width:34px;height:34px}
+  .top-right-nav .textlink{padding:6px 8px;font-size:13px}
+}
+
+/* Contact form styles */
+.contact-form{max-width:900px;margin:2rem auto;padding:1rem 1rem 2rem;background:transparent}
+.contact-form{max-width:760px;margin:2.4rem auto;padding:1.2rem;background:transparent}
+.contact-form .form-inner{width:100%}
+
+/* little transparent boxed card around the contact form */
+.contact-form .form-inner{
+  /* visual box removed: transparent background, no border, no shadow, square corners */
+  background: transparent;
+  border-radius: 0;
+  padding: 1.6rem;
+  border: none;
+  box-shadow: none;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+}
+.contact-form h3{font-size:1.4rem;margin-bottom:1rem;color:var(--muted);text-align:left}
+.contact-form form{display:flex;flex-direction:column;gap:0.8rem}
+.contact-form .field-row{display:flex;gap:0.8rem;align-items:center}
+.contact-form .field-row.name-row{gap:1rem}
+.contact-form .field-row.single{flex-direction:row}
+.contact-form .field-row.full{flex-direction:column;width:100%}
+.contact-form textarea{width:100%;min-height:170px;resize:vertical}
+.form-field{display:flex;flex-direction:column;flex:1}
+.form-field label{font-weight:700;color:var(--muted);font-size:0.98rem;margin-bottom:6px}
+.form-field input,.form-field textarea{padding:0.6rem 0.75rem;border-radius:6px;border:1px solid rgba(255,255,255,0.08);background:rgba(255,255,255,0.06);color:var(--accent);width:100%;box-sizing:border-box;text-shadow:0 1px 3px rgba(0,0,0,0.5);
+  /* backdrop blur removed */
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+}
+.contact-form .field-row.full .form-field{width:100%}
+.contact-form input,.contact-form textarea{flex:1}
+.contact-form input:focus,.contact-form textarea:focus{outline:none;border-color:rgba(255,255,255,0.22);box-shadow:0 6px 22px rgba(0,0,0,0.45);background:rgba(255,255,255,0.08)}
+.contact-form .btn{align-self:flex-start;padding:0.6rem 1rem;border-radius:6px;background:transparent;border:1px solid rgba(255,255,255,0.12);color:var(--muted)}
+.contact-form .btn:hover{color:var(--accent);border-color:rgba(255,255,255,0.22);transform:translateY(-2px)}
+
+/* vertically center contact page content */
+.contact-page .container{min-height:calc(100vh - 4rem);display:flex;align-items:center;justify-content:center;padding:0}
+.container{max-width:1400px;margin:3rem auto;padding:0 0.75rem}
+.contact-page .contact-form{margin:0;max-width:96vw;width:96vw;padding:2.4rem 1.2rem;background:transparent;border-radius:0}
+.contact-page .contact-form .form-inner{padding:1.6rem;max-width:1200px;margin-left:0;display:block}
+.contact-page .contact-form h3{margin-left:0}
+.contact-page .contact-form .form-inner{padding-left:0;padding-right:0}
+.contact-page .contact-form .field-row{align-items:flex-start}
+.contact-page .contact-form .form-field{min-width:0}
+.contact-page .contact-form .form-field input,.contact-page .contact-form .form-field textarea{width:100%}
+.contact-page .contact-form .field-row.name-row{gap:1.4rem}
+.contact-page .contact-form .field-row.name-row .form-field{flex-basis:48%}
+.contact-page .contact-form h3{font-size:1.95rem;margin-bottom:1.1rem;text-align:left;text-shadow:0 2px 6px rgba(0,0,0,0.6)}
+.contact-page .contact-form .form-field input,.contact-page .contact-form .form-field textarea{padding:1.05rem 1.1rem;font-size:1.08rem}
+.contact-page .form-field label{font-size:1.08rem;text-shadow:0 1px 4px rgba(0,0,0,0.6)}
+
+/* global headings subtle shadow for better readability on images */
+h1,h2,h3{text-shadow:0 2px 6px rgba(0,0,0,0.55)}
+.contact-page .contact-form form{gap:1rem}
+.contact-page .contact-form .field-row.name-row .form-field{flex:1 1 48%}
+
+
+/* Simple responsive tweaks for content pages */
+.container{max-width:1400px;margin:3rem auto;padding:0 1rem}
+.nav-back{display:inline-block;margin-bottom:1rem;color:var(--accent);text-decoration:none;border-bottom:1px dashed rgba(255,255,255,0.12)}
+h2{margin-bottom:1rem}
+p.lead{color:rgba(255,255,255,0.85);margin-bottom:1.5rem}
+
+/* Accessibility focus outlines */
+a:focus{outline:3px solid rgba(255,255,255,0.12);outline-offset:3px}
+
+/* About page hero */
+.about-hero{position:relative;height:100vh;background:#000;overflow:hidden}
+.about-hero::before{content:'';position:absolute;inset:0;background-image:url('assets/about-bg.jpg');background-repeat:no-repeat;background-size:cover;background-position:center center;filter:brightness(.6) saturate(.95);z-index:0}
+.about-overlay{position:relative;z-index:2;min-height:100vh;padding:2rem 2rem;display:flex;flex-direction:column;justify-content:center;align-items:center;background:linear-gradient(to bottom, rgba(0,0,0,0.04), rgba(0,0,0,0.12))}
+.about-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:1rem;align-items:start;max-width:1400px}
+.about-grid.centered{width:100%;max-width:1400px}
+.about-grid.centered{margin:0 auto}
+.about-grid.centered .about-box{background:rgba(0,0,0,0.32);padding:2.6rem;border-radius:14px;color:var(--muted)}
+.about-box{background:rgba(0,0,0,0.45);padding:2.6rem;border-radius:14px;color:var(--muted);text-align:left}
+.about-box h2,.about-box h3{font-size:1.35rem;margin-bottom:0.9rem}
+.about-box p{font-size:1.02rem;line-height:1.6}
+.about-box h2,.about-box h3{margin-bottom:0.6rem}
+/* removed .about-contact fixed block — contact is inline inside about-box now */
+
+/* inline contact used inside about-box (small, left-aligned under the bio) */
+.about-box .inline-contact{margin-top:12px;display:flex;flex-direction:row;gap:12px;align-items:center;flex-wrap:wrap}
+.about-box .inline-contact .socials{display:flex;gap:8px;align-items:center}
+.about-box .inline-contact .email{font-weight:600;color:var(--muted);font-size:0.95rem}
+.about-box .inline-contact .email a{color:var(--muted);text-decoration:none;font-weight:600}
+.about-box .inline-contact .email a:hover{color:var(--accent)}
+.about-box .inline-contact .email a{display:inline-block;transition:color .14s ease,transform .14s ease}
+.about-box .inline-contact .email a:hover{transform:translateY(-2px)}
+/* make inline icons match other `.icon` styles */
+.about-box .inline-contact .icon{display:inline-flex;align-items:center;justify-content:center;color:var(--muted);background:transparent;border:none;padding:4px;transition:color .14s ease,transform .14s ease}
+.about-box .inline-contact .icon:hover{color:var(--accent);transform:translateY(-2px)}
+
+/* small inline youtube icon before email */
+.about-box .inline-contact .email .email-icon{display:inline-flex;align-items:center;justify-content:center;margin-right:8px;color:var(--muted);vertical-align:middle}
+.about-box .inline-contact .email .email-icon svg{display:block;width:16px;height:16px}
+
+.contact-hero{
+  position: relative;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6rem 0;
+  background: transparent;
+  min-height: 70vh;
+}
+
+/* limit the visible background to the centered content area (non full-bleed)
+   the pseudo-element is centered and constrained by max-width so the image
+   doesn't span edge-to-edge of the viewport */
+.contact-hero::before{
+  /* fixed to the viewport so the image is independent from the card */
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image: url('assets/contact-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  /* lighten the image so there's no heavy faded black */
+  filter: brightness(.95) saturate(.98);
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* On photography page we remove the contact-hero pseudo background to avoid flashing background images */
+.photography-page .contact-hero::before,
+.photography-page .about-hero::before{
+  background-image: none !important;
+  background: transparent !important;
+  filter: none !important;
+}
+
+/* Also ensure any background-image assigned to .video-wrap or .contact-hero is cleared */
+.photography-page .video-wrap,
+.photography-page .contact-hero{
+  background-image: none !important;
+}
+
+/* keep a centered visual band so the form sits on a constrained area while
+   the image itself spans edge-to-edge */
+.contact-hero .contact-form{
+  position: relative;
+  z-index: 2;
+  width: 96vw;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.contact-overlay{
+  position: absolute;
+  inset: 0;
+  background: transparent; /* removed dark overlay per request */
+  z-index: 1;
+  pointer-events: none;
+}
+
+@media (max-width:860px){
+  .about-grid{grid-template-columns:1fr;}
+  .about-overlay{padding:2rem}
+  .about-contact{left:12px;bottom:12px}
+  .contact-form{padding:1rem}
+  .contact-form .field-row{flex-direction:column}
+  .contact-form label{min-width:0}
+}
+
+@media (max-width:860px){
+  .contact-form{padding:1rem}
+  .contact-form .field-row{flex-direction:column}
+  .contact-form label{min-width:0}
+  .form-field{width:100%}
+}
+
+/* ----- Cinematic gallery styles (appended) ----- */
+.gallery-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:1.5rem}
+.photo-card{position:relative;overflow:hidden;border-radius:8px;aspect-ratio:4/3;cursor:pointer;background:linear-gradient(180deg,#0b0b0b,#141414);border:1px solid rgba(255,255,255,0.04);background-repeat:no-repeat;background-position:center center;background-size:cover}
+.photo-card img{width:100%;height:100%;object-fit:cover;display:block;transition:transform 8s cubic-bezier(.2,.7,.1,.9);opacity:1;visibility:visible}
+.photo-card::before{content:'';position:absolute;inset:0;pointer-events:none}
+.photo-card:hover img{transform:scale(1.08)}
+.photo-card figcaption{position:absolute;left:12px;bottom:12px;color:var(--muted);font-weight:700;background:linear-gradient(90deg, rgba(0,0,0,0.18), rgba(0,0,0,0.06));padding:6px 10px;border-radius:6px;font-size:0.85rem}
+
+@media (max-width:1000px){.gallery-grid{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:640px){.gallery-grid{grid-template-columns:1fr}}
+
+/* Remove boxed dark background for hero overlays on media pages */
+.video-wrap .overlay,
+.contact-hero .overlay{
+  background: transparent !important;
+  padding: 1.2rem 1rem; /* keep some spacing but remove heavy banding */
+}
+
+/* make brand sit flush and remove heavy shadow on media hero */
+.video-wrap .overlay .brand,
+.contact-hero .overlay .brand{
+  text-shadow: none;
+  color: var(--accent);
+}
+
+/* Fullscreen lightbox */
+.lightbox{position:fixed;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,0.96);z-index:9999;opacity:0;pointer-events:none;transition:opacity .22s ease;padding:12px;box-sizing:border-box}
+.lightbox.open{opacity:1;pointer-events:auto}
+/* Make the modal much larger while keeping a small viewport margin so it feels immersive
+   but doesn't request browser fullscreen. The stage keeps 16:9 ratio and scales up to
+   near-fullscreen on large displays. */
+.lb-stage{
+  width: min(98vw, 1920px);
+  max-width: 98vw;
+  max-height: 96vh;
+  aspect-ratio: 16 / 9;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  position:relative;
+  border-radius:6px;
+  overflow:hidden;
+}
+.lb-stage img{max-width:100%;max-height:100%;object-fit:contain;display:block}
+.lightbox.landscape .lb-stage img{width:90vw;height:auto;max-height:88vh;object-fit:contain}
+.lightbox.portrait .lb-stage img{height:88vh;width:auto;max-width:92vw;object-fit:contain}
+.lb-caption{position:absolute;left:12px;bottom:-4rem;color:var(--muted);font-weight:600;font-size:0.95rem}
+.lb-close,.lb-prev,.lb-next{position:fixed;z-index:10001;background:transparent;border:none;color:var(--muted);font-size:2.6rem;padding:8px;cursor:pointer}
+.lb-close{top:18px;right:18px}
+.lb-prev{left:18px;top:50%;transform:translateY(-50%)}
+.lb-next{right:18px;top:50%;transform:translateY(-50%)}
+
+/* reduce clutter on mobile */
+@media (max-width:640px){
+  .lb-close,.lb-prev,.lb-next{font-size:2rem}
+  .lb-caption{bottom:12px;left:12px}
+}
+
+/* Ensure embedded iframes used for video lightbox fill the stage cleanly */
+#videoLightbox .lb-stage iframe,
+#videoLightbox .lb-stage iframe[src]{
+  width:100% !important;
+  height:100% !important;
+  border:0 !important;
+  background:#000 !important;
+  display:block;
+}
+
+/* When lightbox tries to enter fullscreen, make the stage expand to viewport while preserving ratio */
+.lightbox:fullscreen .lb-stage, .lightbox:-webkit-full-screen .lb-stage{
+  width:100vw !important;
+  height:100vh !important;
+  aspect-ratio: auto !important;
+}
+
+/* preview input styling (videography) */
+#previewId, #previewTitle{color:var(--accent)}
+
+/* subtle spacer used on photography page to position the gallery */
+.hero-spacer{height:0;min-height:0}
+@media (max-width:860px){.hero-spacer{height:0;min-height:0}}
+
+/* Completely hide the hero area on the photography page so the gallery sits at the top */
+.photography-page .video-wrap,
+.photography-page .contact-hero,
+.photography-page .video-wrap .overlay{
+  display: none !important;
+  height: 0 !important;
+  padding: 0 !important;
+}
+
+/* Pull the gallery up: remove the default margin on the container for photography page */
+.photography-page .container{margin-top:0;padding-top:0}
+.photography-page .gallery-grid{margin-top:0}
+
+/* Center the gallery vertically on the photography page */
+.photography-page main{display:flex;flex-direction:column;min-height:100vh}
+.photography-page .container{display:flex;flex-direction:column;justify-content:center;flex:1;padding:2rem 1rem}
+.photography-page .gallery-grid{align-self:center;max-width:1200px}
+.photography-page .gallery-grid{grid-template-columns:repeat(3,1fr);gap:12px}
+@media (max-width:900px){.photography-page .gallery-grid{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:640px){.photography-page .gallery-grid{grid-template-columns:1fr}}
+
+/* For videography: hide captions so cards show only thumbnails */
+#videoGrid .photo-card figcaption{display:none !important}
+
+/* Hide caption text in the video lightbox (no text under player while video plays) */
+#videoLightbox .lb-caption{display:none !important}
+

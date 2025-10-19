@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Contact — ShotsByFra</title>
+    <script>
+      (function(){
+        try{
+          var key='shotsbyfra_first_visit_v1';
+          if(!localStorage.getItem(key)){
+            document.documentElement.classList.add('first-visit');
+            localStorage.setItem(key,'1');
+            setTimeout(function(){ document.documentElement.classList.remove('first-visit'); }, 1400);
+          }
+        }catch(e){}
+      })();
+    </script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body class="contact-page">
+    <header class="top-right-nav">
+  <a class="textlink" href="index.html" data-i18n="navHome">Home</a>
+  <a class="textlink" href="about.html" data-i18n="navAbout">About</a>
+  <a class="textlink" href="contact.html" data-i18n="navContact">Contact</a>
+  <a class="icon" href="https://www.instagram.com/ShotsByFra" target="_blank" rel="noopener" aria-label="Instagram">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="1.5"/><path d="M16 12a4 4 0 11-8 0 4 4 0 018 0z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M18.5 7h.01" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+      </a>
+  <a class="icon" href="https://www.youtube.com/@ShotsByFra" target="_blank" rel="noopener" aria-label="YouTube">
+        <!-- Minimal outline + play icon -->
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="2" y="6" width="20" height="12" rx="2" stroke="currentColor" stroke-width="1.2" fill="none"/><path d="M10 9v6l5-3-5-3z" fill="currentColor"/></svg>
+      </a>
+      <div class="lang-toggle" data-i18n="langToggle">EN / AL</div>
+    </header>
+
+    <main>
+      <section class="contact-hero">
+        <div class="contact-overlay"></div>
+        <div class="contact-form">
+          <div class="form-inner">
+            <h3 data-i18n="contactTitle">Get in touch</h3>
+            <form onsubmit="return submitContact(event)">
+              <div class="field-row name-row">
+                <div class="form-field"><label for="first" data-i18n="labelFirst">First name</label><input id="first" name="first" required placeholder="" data-i18n-placeholder="labelFirst"></div>
+                <div class="form-field"><label for="last" data-i18n="labelLast">Last name</label><input id="last" name="last" required placeholder="" data-i18n-placeholder="labelLast"></div>
+              </div>
+              <div class="field-row full"><div class="form-field"><label for="email" data-i18n="labelEmail">Email</label><input id="email" name="email" type="email" required placeholder="" data-i18n-placeholder="labelEmail"></div></div>
+              <div class="field-row full"><div class="form-field"><label for="subject" data-i18n="labelSubject">Subject</label><input id="subject" name="subject" placeholder="" data-i18n-placeholder="labelSubject"></div></div>
+              <div class="field-row full"><div class="form-field"><label for="message" data-i18n="labelMessage">Message</label><textarea id="message" name="message" required placeholder="" data-i18n-placeholder="labelMessage"></textarea></div></div>
+              <button class="btn" type="submit" data-i18n="btnSend">Send</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script>
+    function submitContact(e){
+      e.preventDefault();
+      var f=document.getElementById('first').value||'';
+      var l=document.getElementById('last').value||'';
+      var em=document.getElementById('email').value||'';
+      var s=document.getElementById('subject').value||'';
+      var m=document.getElementById('message').value||'';
+      var subject = encodeURIComponent((s||'Contact from ShotsByFra') + ' — ' + f + ' ' + l);
+      var body = encodeURIComponent('Name: ' + f + ' ' + l + '\nEmail: ' + em + '\n\n' + m);
+      var mailto = 'mailto:franceskomuca@gmail.com?subject=' + subject + '&body=' + body;
+      window.location.href = mailto;
+      return false;
+    }
+    </script>
+
+    <script src="i18n.js"></script>
+  </body>
+</html>

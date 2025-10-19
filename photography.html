@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1" />
+	<title>Photography — ShotsByFra</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body class="photography-page">
+		<header class="top-right-nav">
+			<a class="textlink" href="index.html" data-i18n="navHome">Home</a>
+			<a class="textlink" href="about.html" data-i18n="navAbout">About</a>
+			<a class="textlink" href="contact.html" data-i18n="navContact">Contact</a>
+	<a class="icon" href="https://www.instagram.com/ShotsByFra" target="_blank" rel="noopener" aria-label="Instagram">
+				<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="1.5"/><path d="M16 12a4 4 0 11-8 0 4 4 0 018 0z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M18.5 7h.01" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+			</a>
+	<a class="icon" href="https://www.youtube.com/@ShotsByFra" target="_blank" rel="noopener" aria-label="YouTube">
+				<!-- Minimal outline + play icon -->
+				<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="2" y="6" width="20" height="12" rx="2" stroke="currentColor" stroke-width="1.2" fill="none"/><path d="M10 9v6l5-3-5-3z" fill="currentColor"/></svg>
+			</a>
+			<div class="lang-toggle" data-i18n="langToggle">EN / AL</div>
+		</header>
+
+	<main>
+		<section class="video-wrap contact-hero" aria-labelledby="photography-title">
+							<div class="overlay">
+								<!-- Subtle spacer so the gallery sits slightly lower than the viewport top without a heavy hero -->
+								<div class="hero-spacer" aria-hidden="true"></div>
+							</div>
+		</section>
+
+		<section class="container">
+			<h2 data-i18n="photographyTitle">Photography</h2>
+
+					<!-- Gallery grid: wired to uploaded images in assets/photos/ -->
+					<div class="gallery-grid" id="gallery">
+						<figure class="photo-card" data-index="0">
+							<img data-src="assets/photos/FRA00991.jpg" src="assets/photos/FRA00991.jpg" alt="FRA00991" loading="lazy">
+							<figcaption>FRA00991</figcaption>
+						</figure>
+
+						<figure class="photo-card" data-index="1">
+							<img data-src="assets/photos/FRA01042.jpg" src="assets/photos/FRA01042.jpg" alt="FRA01042" loading="lazy">
+							<figcaption>FRA01042</figcaption>
+						</figure>
+
+						<figure class="photo-card" data-index="2">
+							<img data-src="assets/photos/FRA01054.jpg" src="assets/photos/FRA01054.jpg" alt="FRA01054" loading="lazy">
+							<figcaption>FRA01054</figcaption>
+						</figure>
+
+						<figure class="photo-card" data-index="3">
+							<img data-src="assets/photos/FRA01057.jpg" src="assets/photos/FRA01057.jpg" alt="FRA01057" loading="lazy">
+							<figcaption>FRA01057</figcaption>
+						</figure>
+
+						<figure class="photo-card" data-index="4">
+							<img data-src="assets/photos/FRA01152.jpg" src="assets/photos/FRA01152.jpg" alt="FRA01152" loading="lazy">
+							<figcaption>FRA01152</figcaption>
+						</figure>
+
+						<figure class="photo-card" data-index="5">
+							<img data-src="assets/photos/FRA03625.jpg" src="assets/photos/FRA03625.jpg" alt="FRA03625" loading="lazy">
+							<figcaption>FRA03625</figcaption>
+						</figure>
+					</div>
+		</section>
+
+		<!-- Fullscreen lightbox modal -->
+		<div id="lightbox" class="lightbox" aria-hidden="true">
+			<button class="lb-close" aria-label="Close (Esc)">&times;</button>
+			<button class="lb-prev" aria-label="Previous (Left)">‹</button>
+			<div class="lb-stage">
+				<img id="lb-image" src="" alt="" />
+				<div id="lb-caption" class="lb-caption"></div>
+			</div>
+			<button class="lb-next" aria-label="Next (Right)">›</button>
+		</div>
+
+	</main>
+
+	<script src="i18n.js"></script>
+	<script src="gallery.js"></script>
+
+	<!-- Debug helper: logs image load failures and marks broken thumbnails -->
+	<script>
+	  (function(){
+	    const imgs = document.querySelectorAll('.gallery-grid img');
+	    imgs.forEach((img, i)=>{
+	      img.addEventListener('load', ()=>console.log('thumb loaded', img.src));
+	      img.addEventListener('error', ()=>{
+	        console.warn('thumb failed', img.src);
+	        img.style.border = '2px solid #b22222';
+	        img.style.opacity = '0.8';
+	      });
+	      // also observe if the image becomes visible later (lazy replaced)
+	      if(img.complete && img.naturalWidth===0){
+	        img.dispatchEvent(new Event('error'));
+	      }
+	    });
+	  })();
+	</script>
+
+	<script>
+	  // Fallback: copy <img> src into the parent .photo-card background to ensure visibility
+	  (function(){
+	    const cards = document.querySelectorAll('.photo-card');
+	    cards.forEach(card=>{
+	      const img = card.querySelector('img');
+	      if(!img) return;
+	      const src = img.getAttribute('src') || img.getAttribute('data-src');
+	      if(src){
+	        // set as background only if not already visible
+	        card.style.backgroundImage = `url('${src}')`;
+	      }
+	    });
+	  })();
+	</script>
+</body>
+</html>
+

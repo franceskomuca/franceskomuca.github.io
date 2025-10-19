@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Hero Video</title>
+  <style>
+    :root{
+      /* Adjust these to crop and scale the video */
+      --hero-height: 60vh;    /* hero section height */
+      --hero-scale: 1.12;     /* scale up the iframe to crop side black bars */
+      --hero-translate-x: -3%; /* shift horizontally if needed */
+      --overlay-fade-duration: 350ms;
+    }
+
+    body{ margin:0; font-family:system-ui,Segoe UI,Roboto,Helvetica,Arial; }
+
+    .hero{
+      position:relative;
+      width:100%;
+      height:var(--hero-height);
+      overflow:hidden;
+      background:#000;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+    }
+
+    /* iframe container keeps aspect ratio and allows cropping by scaling */
+    .video-wrap{
+      position:absolute;
+      top:0; left:50%;
+      height:100%;
+      width:177.77vh; /* 16:9 ratio relative to viewport height; large enough to fill */
+      transform:translateX(-50%);
+      will-change:transform;
+      pointer-events:none; /* allow clicks through (we autoplay muted); set to auto if you want interactions) */
+    }
+
+    /* the iframe itself is scaled up to remove side borders */
+    .video-wrap iframe{
+      position:absolute;
+      top:50%; left:50%;
+      width:100%; height:56.25vw; /* keep 16:9 sizing for the iframe element itself */
+      min-height:100%; min-width:177.78vh;
+      transform: translate(-50%,-50%) translateX(var(--hero-translate-x)) scale(var(--hero-scale));
+      transform-origin:50% 50%;
+    }
+
+    /* A short overlay that hides YouTube's initial title/branding for a moment */
+    .cover{
+      position:absolute;
+      inset:0;
+      background:linear-gradient(180deg, rgba(0,0,0,0.45), rgba(0,0,0,0.15));
+      display:flex;
+      align-items:flex-end;
+      justify-content:center;
+      color:#fff;
+      padding:24px;
+      box-sizing:border-box;
+      transition:opacity var(--overlay-fade-duration) ease, visibility var(--overlay-fade-duration) ease;
+      z-index:5;
+    }
+
+    .cover.hidden{ opacity:0; visibility:hidden; }
+
+    /* Optional mute/unmute button (visible for accessibility) */
+    .controls{
+      position:absolute;
+      right:18px;
+      bottom:18px;
+      z-index:6;
+      display:flex;
+      gap:8px;
+    }
+
+    .btn{
+      background:rgba(0,0,0,0.5);
+      color:#fff;
+      border:1px solid rgba(255,255,255,0.08);
+      padding:8px 10px;
+      border-radius:6px;
+      cursor:pointer;
+      font-size:14px;
+    }
+
+    .attribution{
+      font-size:13px; opacity:0.9;
+    }
+
+    /* Make hero a bit taller on large screens (example tweak) */
+    @media(min-width:1100px){
+      :root{ --hero-height: 70vh; }
+    }
+  </style>
+</head>
+<body>
+
+  <section class="hero">
+    <div class="video-wrap" id="video-wrap">
+      <!-- We'll try to play a local video file at assets/hero.mp4 first. If it doesn't exist
+           the script below will insert the YouTube iframe as a fallback. -->
+      <video id="local-video" autoplay muted loop playsinline style="width:100%;height:100%;object-fit:cover;display:none;pointer-events:none;">
+        <source src="assets/hero.mp4" type="video/mp4">
+        <!-- Other formats could be added here if needed -->
+      </video>
+      <!-- YouTube iframe is injected by JS only if local video is not available -->
+    </div>
+
+    <div class="cover" id="cover">
+      <div style="text-align:center; width:100%; max-width:1100px;">
+        <div class="attribution">Your product or site tagline goes here</div>
+      </div>
+    </div>
+
+    <!-- Controls removed per request -->
+  </section>
+
+    <script>
+    (function(){
+      var cover = document.getElementById('cover');
+      var local = document.getElementById('local-video');
+      var wrap = document.getElementById('video-wrap');
+
+      // Helper: test if a file is reachable via HEAD request.
+      function fileExists(url, cb){
+        try{
+          var xhr = new XMLHttpRequest();
+          xhr.open('HEAD', url, true);
+          xhr.onreadystatechange = function(){
+            if(xhr.readyState === xhr.DONE){
+              cb(xhr.status >= 200 && xhr.status < 400);
+            }
+          };
+          xhr.send();
+        }catch(e){ cb(false); }
+      }
+
+      // Attempt to use a local video file first. If not present, inject the YouTube iframe and minimal API to hide cover.
+      var localUrl = 'assets/hero.mp4';
+      fileExists(localUrl, function(ok){
+        if(ok){
+          // Use local video
+          local.style.display = 'block';
+          // ensure it's muted for autoplay reliability
+          local.muted = true;
+
+          // Seek to 4s when metadata is loaded, then play
+          function trySeekAndPlay(){
+            try{
+              if(typeof local.duration !== 'undefined' && !isNaN(local.duration)){
+                var target = 4;
+                if(local.duration > target){
+                  try{ local.currentTime = target; }catch(e){ /* some browsers may throw if not allowed yet */ }
+                }
+              }
+            }catch(e){}
+            var p = local.play();
+            if(p && p.catch) p.catch(function(){ /* autoplay blocked, leave muted */ });
+          }
+
+          if(local.readyState >= 1){
+            trySeekAndPlay();
+          } else {
+            local.addEventListener('loadedmetadata', trySeekAndPlay, {once:true});
+          }
+
+          // Once playing, hide the cover
+          local.addEventListener('playing', function(){
+            setTimeout(function(){ cover.classList.add('hidden'); }, 300);
+          });
+        } else {
+          // Inject YouTube iframe as fallback
+          var iframe = document.createElement('iframe');
+          iframe.id = 'yt-player';
+          // start=4 requests playback from 4s
+          iframe.src = 'https://www.youtube.com/embed/VIDEO_ID?start=4&enablejsapi=1&rel=0&controls=0&playsinline=1&autoplay=1&mute=1&modestbranding=1&iv_load_policy=3';
+          iframe.frameBorder = '0';
+          iframe.allow = 'autoplay; fullscreen; picture-in-picture';
+          iframe.allowFullscreen = true;
+          wrap.appendChild(iframe);
+
+          // Load YT API to manage cover fade
+          var tag = document.createElement('script');
+          tag.src = "https://www.youtube.com/iframe_api";
+          var firstScriptTag = document.getElementsByTagName('script')[0];
+          firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+          window.onYouTubeIframeAPIReady = function(){
+            var player = new YT.Player('yt-player', {
+              events: {
+                'onReady': function(event){
+                  try{ player = event.target; player.mute(); /* ensure at 4s */ player.seekTo(4, true); player.playVideo(); }catch(e){}
+                },
+                'onStateChange': function(e){ if(e.data === YT.PlayerState.PLAYING) setTimeout(function(){ cover.classList.add('hidden'); }, 1200); }
+              }
+            });
+          };
+        }
+      });
+
+      // Expose small helper to adjust hero variables
+      window.heroVideoAdjust = function(opts){
+        if(!opts) return;
+        if(opts.scale) document.documentElement.style.setProperty('--hero-scale', opts.scale);
+        if(opts.translateX) document.documentElement.style.setProperty('--hero-translate-x', opts.translateX);
+        if(opts.height) document.documentElement.style.setProperty('--hero-height', opts.height);
+      };
+    })();
+    </script>
+
+</body>
+</html>
+
+  <!-- Redirect visitors to the new videography gallery -->
+  <meta http-equiv="refresh" content="0; url=videography.html" />
+  <script>window.location.replace('videography.html')</script>
+  <noscript style="display:block;padding:18px;text-align:center;color:#333">If you are not redirected, <a href="videography.html">click here to open the Videography page</a>.</noscript>
+
+</body>
+</html>

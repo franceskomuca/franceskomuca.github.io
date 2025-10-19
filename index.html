@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>ShotsByFra — Home</title>
+    <script>
+      // set the first-visit class on the root element early to prevent flicker
+      (function(){
+        try{
+          var key='shotsbyfra_first_visit_v1';
+          if(!localStorage.getItem(key)){
+            document.documentElement.classList.add('first-visit');
+            localStorage.setItem(key,'1');
+            // remove the class after animations so subsequent navigation is normal
+            setTimeout(function(){ document.documentElement.classList.remove('first-visit'); }, 1400);
+          }
+        }catch(e){}
+      })();
+    </script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="top-right-nav">
+      <a class="textlink" href="index.html" data-i18n="navHome">Home</a>
+      <a class="textlink" href="about.html" data-i18n="navAbout">About</a>
+      <a class="textlink" href="contact.html" data-i18n="navContact">Contact</a>
+  <a class="icon" href="https://www.instagram.com/ShotsByFra" target="_blank" rel="noopener" aria-label="Instagram">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="1.5"/><path d="M16 12a4 4 0 11-8 0 4 4 0 018 0z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M18.5 7h.01" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+      </a>
+  <a class="icon" href="https://www.youtube.com/@ShotsByFra" target="_blank" rel="noopener" aria-label="YouTube">
+        <!-- Minimal outline + play icon -->
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="2" y="6" width="20" height="12" rx="2" stroke="currentColor" stroke-width="1.2" fill="none"/><path d="M10 9v6l5-3-5-3z" fill="currentColor"/></svg>
+      </a>
+      <div class="lang-toggle" data-i18n="langToggle">EN / AL</div>
+    </header>
+
+    <main>
+      <section class="video-wrap">
+        <!-- Local video fallback (if available) -->
+        <video id="bg-video" autoplay muted loop playsinline>
+          <source src="assets/hero.mp4" type="video/mp4">
+        </video>
+
+        <!-- YouTube iframe scaffold (optional) -->
+        <div class="yt-bg" aria-hidden="true">
+          <!-- The YouTube iframe is inserted via JS elsewhere if present -->
+        </div>
+
+        <div class="overlay">
+          <div class="brand">ShotsByFra</div>
+          <div class="links">
+            <a class="btn" href="photography.html" data-i18n="linkPhotography">Photography</a>
+            <a class="btn" href="videography.html" data-i18n="linkVideography">Videography</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="i18n.js"></script>
+  </body>
+</html>

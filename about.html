@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>About — ShotsByFra</title>
+    <script>
+      (function(){
+        try{
+          var key='shotsbyfra_first_visit_v1';
+          if(!localStorage.getItem(key)){
+            document.documentElement.classList.add('first-visit');
+            localStorage.setItem(key,'1');
+            setTimeout(function(){ document.documentElement.classList.remove('first-visit'); }, 1400);
+          }
+        }catch(e){}
+      })();
+    </script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body class="about-page">
+    <header class="top-right-nav">
+  <a class="textlink" href="index.html" data-i18n="navHome">Home</a>
+  <a class="textlink" href="about.html" data-i18n="navAbout">About</a>
+  <a class="textlink" href="contact.html" data-i18n="navContact">Contact</a>
+      <a class="icon" href="https://instagram.com/" target="_blank" rel="noopener" aria-label="Instagram">
+        <!-- Instagram SVG (outline) -->
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="1.5"/><path d="M16 12a4 4 0 11-8 0 4 4 0 018 0z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M18.5 7h.01" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+      </a>
+      <a class="icon" href="https://www.youtube.com/" target="_blank" rel="noopener" aria-label="YouTube">
+        <!-- Minimal outline + play icon -->
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="2" y="6" width="20" height="12" rx="2" stroke="currentColor" stroke-width="1.2" fill="none"/><path d="M10 9v6l5-3-5-3z" fill="currentColor"/></svg>
+      </a>
+      <div class="lang-toggle" data-i18n="langToggle">EN / AL</div>
+    </header>
+
+    <main>
+      <section class="about-hero">
+        <div class="about-overlay">
+          <div class="about-grid centered">
+            <div class="about-box">
+              <p data-i18n="aboutParagraph">
+                I’m <span class="bold">Françesko Muça</span>, the creative mind behind ShotsByFra — a cinematic videographer and photographer based in Vlora, Albania, passionate about transforming real moments into cinematic stories. I specialize in professional video production, creative photography, and visual storytelling for brands, businesses, and individuals who want to stand out. My work blends emotion, light, and movement to create visuals that not only look beautiful but also connect deeply with the audience. From commercial brand films, travel videos, and documentary-style storytelling to portrait and lifestyle photography, every frame I capture is crafted with intention and cinematic precision.
+              </p>
+              <div class="inline-contact">
+                <div class="socials">
+                  <a class="icon" href="https://www.instagram.com/ShotsByFra" target="_blank" rel="noopener" aria-label="Instagram">
+                    <!-- Instagram SVG -->
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="1.5"/><path d="M16 11.99a4 4 0 11-8 0 4 4 0 018 0z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M18.5 6.5h.01" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                  </a>
+                  <a class="icon" href="https://www.youtube.com/@ShotsByFra" target="_blank" rel="noopener" aria-label="YouTube">
+                    <!-- Minimal outline + play icon (small) -->
+                    <svg width="18" height="18" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="3" y="7" width="18" height="10" rx="2" stroke="currentColor" stroke-width="1" fill="none"/><path d="M10 9v6l5-3-5-3z" fill="currentColor"/></svg>
+                  </a>
+                </div>
+                <div class="email">franceskomuca@gmail.com</div>
+              </div>
+            </div>
+
+              <div class="about-box">
+                <p data-i18n="aboutParagraphRight">Në <span class="bold">ShotsByFra</span>, misioni im është t'i ndihmoj klientët të ngrenë identitetin e tyre vizual përmes përmbajtjes me cilësi të lartë që ndihet autentike dhe vizualisht mahnitëse. Qoftë një biznes lokal në Vlorë apo një markë ndërkombëtare që kërkon një regjisor kinematografik dhe krijues përmbajtjeje, unë ofroj shërbime të plota prodhimi videosh dhe fotografish - nga koncepti dhe regjia deri te redaktimi dhe klasifikimi i ngjyrave. Unë sjell një qasje krijuese, por profesionale në çdo projekt, duke siguruar që çdo histori të tregohet me emocion, ndikim dhe stil të përjetshëm. Le të krijojmë diçka të fuqishme së bashku - pamje që frymëzojnë, prekin dhe zgjasin.</p>
+              </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="i18n.js"></script>
+  </body>
+</html>
