@@ -1,0 +1,808 @@
+[
+  {
+    "query": "Professional fashion photography portrait with studio lighting",
+    "image_info": {
+      "url": "https://images.squarespace-cdn.com/content/v1/50aa7079e4b040d142112688/1624293066496-4XEH8I4L3HPUW7ZWXIZ4/examples.jpg",
+      "img_format": "WEBP",
+      "mode": "RGB",
+      "file_size": 414566,
+      "width": 2280,
+      "height": 1424,
+      "total_pixels": 3246720,
+      "basic_score": 0.5383323343970514,
+      "file_name": "professional_fashion_portraits_studio_lighting_collage.jpg"
+    },
+    "llm_score": {
+      "success": true,
+      "relevance_score": 100.0,
+      "clarity_score": 95.0,
+      "watermark_score": 100.0,
+      "overall_score": 98.0,
+      "explanation": "The image is a collage of eight distinct, high-quality professional fashion portraits, each demonstrating expert studio lighting and composition. The variety of models, attire, and lighting styles perfectly aligns with the search query and prompt.",
+      "file_name": "professional_fashion_portraits_studio_lighting_collage.jpg",
+      "caption": "A collage showcasing eight distinct professional fashion photography portraits. Each image features a different model in a studio setting, highlighting various styles of professional studio lighting, sophisticated attire, and elegant poses, representative of high-end fashion photography.",
+      "recommend": true,
+      "error": ""
+    }
+  },
+  {
+    "query": "Professional fashion photography portrait with studio lighting",
+    "image_info": {
+      "url": "https://cdn.media.amplience.net/i/canon/pro-fashion-photography-lighting-tips-1_701f20ae87c045549311af9f35eb1ad5",
+      "img_format": "JPEG",
+      "mode": "RGB",
+      "file_size": 33573,
+      "width": 800,
+      "height": 534,
+      "total_pixels": 427200,
+      "basic_score": 0.8279753907090412,
+      "file_name": "professional_fashion_portrait_red_studio_lighting.jpg"
+    },
+    "llm_score": {
+      "success": true,
+      "relevance_score": 100.0,
+      "clarity_score": 95.0,
+      "watermark_score": 100.0,
+      "overall_score": 95.0,
+      "explanation": "The image perfectly matches both the search query and the prompt. It showcases professional fashion photography with dramatic studio lighting, focusing on a portrait. The clarity is excellent, with sharp details, and there are no visible watermarks. The composition and lighting create a strong, artistic aesthetic.",
+      "file_name": "professional_fashion_portrait_red_studio_lighting.jpg",
+      "caption": "A striking professional fashion portrait featuring a woman with an intense gaze, styled with dramatic makeup and an elaborate, voluminous red and cream-colored garment. The subject is bathed in bold, theatrical red studio lighting against a dark background, highlighting the artistic composition and sophisticated styling.",
+      "recommend": true,
+      "error": ""
+    }
+  },
+  {
+    "query": "Professional fashion photography portrait with studio lighting",
+    "image_info": {
+      "url": "https://www.behindtheshutter.com/wp-content/uploads/2023/08/edgy-fashion-photography-using-continnuous-lights-9203.jpg",
+      "img_format": "JPEG",
+      "mode": "RGB",
+      "file_size": 78552,
+      "width": 1200,
+      "height": 800,
+      "total_pixels": 960000,
+      "basic_score": 0.9309394335617495,
+      "file_name": "professional_fashion_portrait_studio_lighting_colorful_background.jpg"
+    },
+    "llm_score": {
+      "success": true,
+      "relevance_score": 100.0,
+      "clarity_score": 95.0,
+      "watermark_score": 100.0,
+      "overall_score": 95.0,
+      "explanation": "The image perfectly matches the search query and prompt, demonstrating high-quality fashion photography with creative and professional studio lighting. The clarity is excellent, and there are no watermarks. The composition and styling are highly artistic and engaging.",
+      "file_name": "professional_fashion_portrait_studio_lighting_colorful_background.jpg",
+      "caption": "A striking close-up fashion portrait features a person with dark skin and a shaved head, adorned with a minimalist golden halo-like headpiece and large, geometric crystal earrings. They wear a vibrant fuchsia top, with one hand gently resting near their chin, showcasing a delicate golden bracelet. The subject is illuminated by dramatic, professional studio lighting, casting cool blue hues on one side of their face and warmer tones on the other, creating a captivating contrast. The background is a soft, abstract blur of pink and purple botanical patterns, enhancing the artistic and high-fashion aesthetic.",
+      "recommend": true,
+      "error": ""
+    }
+  },
+  {
+    "query": "Professional fashion photography portrait with studio lighting",
+    "image_info": {
+      "url": "https://cdn.fstoppers.com/styles/full/s3/media/2018/04/03/edgy-fashion-light-by-dana-cole-1_0.jpg",
+      "img_format": "JPEG",
+      "mode": "RGB",
+      "file_size": 206888,
+      "width": 667,
+      "height": 1000,
+      "total_pixels": 667000,
+      "basic_score": 0.8935263116637017,
+      "file_name": "professional_fashion_portrait_studio_lighting_monochrome_jacket.jpg"
+    },
+    "llm_score": {
+      "success": true,
+      "relevance_score": 100.0,
+      "clarity_score": 98.0,
+      "watermark_score": 100.0,
+      "overall_score": 98.0,
+      "explanation": "The image perfectly matches the search query and prompt. It is a high-quality, professional fashion portrait with expert studio lighting and excellent clarity. The black and white treatment enhances the dramatic effect and texture. No watermarks are present.",
+      "file_name": "professional_fashion_portrait_studio_lighting_monochrome_jacket.jpg",
+      "caption": "A striking black and white professional fashion portrait of a woman with long, wavy blonde hair and dramatic makeup, wearing a shiny textured biker-style jacket. She poses with her arms crossed against a dark studio background, illuminated by expert studio lighting that creates strong contrasts and highlights her features and the jacket's material.",
+      "recommend": true,
+      "error": ""
+    }
+  },
+  {
+    "query": "Professional fashion photography portrait with studio lighting",
+    "image_info": {
+      "url": "https://hensel.eu/wp-content/uploads/2017/02/10scheme_backstage-800x489.jpg",
+      "img_format": "JPEG",
+      "mode": "RGB",
+      "file_size": 44268,
+      "width": 800,
+      "height": 489,
+      "total_pixels": 391200,
+      "basic_score": 0.8128268621103051,
+      "file_name": "professional_fashion_studio_portrait_red_dress_lighting.jpg"
+    },
+    "llm_score": {
+      "success": true,
+      "relevance_score": 95.0,
+      "clarity_score": 95.0,
+      "watermark_score": 100.0,
+      "overall_score": 90.0,
+      "explanation": "The image perfectly matches the search query and prompt, showcasing a professional fashion photoshoot with visible studio lighting equipment. The clarity, focus, and composition are excellent, and there are no intrusive watermarks, only branding on the equipment itself.",
+      "file_name": "professional_fashion_studio_portrait_red_dress_lighting.jpg",
+      "caption": "A full-body shot of a female model in a vibrant red dress and matching heels, posing in a professional photography studio. She has intricate braided hair and is looking towards the camera with a subtle expression. The studio features a neutral grey background and multiple professional lighting setups, including large softboxes and a stripbox, creating a well-lit and dynamic fashion portrait.",
+      "recommend": true,
+      "error": ""
+    }
+  },
+  {
+    "query": "Cinematic landscape photography with golden hour lighting",
+    "image_info": {
+      "url": "https://photopxl.com/pxl-content/uploads/2023/02/Golden_Hour_17_Ready_for_Web12.jpg",
+      "img_format": "JPEG",
+      "mode": "RGB",
+      "file_size": 1895537,
+      "width": 2000,
+      "height": 1307,
+      "total_pixels": 2614000,
+      "basic_score": 0.5444711929501094,
+      "file_name": "cinematic_golden_hour_red_rock_mountains_landscape_sedona.jpg"
+    },
+    "llm_score": {
+      "success": true,
+      "relevance_score": 98.0,
+      "clarity_score": 95.0,
+      "watermark_score": 100.0,
+      "overall_score": 97.0,
+      "explanation": "The image perfectly aligns with the search query and prompt. It showcases stunning landscape photography during golden hour, with dramatic lighting and a rich color palette that gives it a cinematic feel. The clarity is excellent, and there are no watermarks. The composition is strong, highlighting the majestic red rock formations.",
+      "file_name": "cinematic_golden_hour_red_rock_mountains_landscape_sedona.jpg",
+      "caption": "A breathtaking cinematic landscape photograph captured during golden hour, featuring majestic red rock mountains with patches of snow under a dramatic blue sky with golden-tinged clouds. Evergreen trees frame the foreground, leading the eye to the sun-kissed peaks that glow with warm light and deep shadows.",
+      "recommend": true,
+      "error": ""
+    }
+  },
+  {
+    "query": "Cinematic landscape photography with golden hour lighting",
+    "image_info": {
+      "url": "https://aestheticsofphotography.com/wp-content/uploads/2024/01/golden_hour_photography.webp",
+      "img_format": "WEBP",
+      "mode": "RGBA",
+      "file_size": 87996,
+      "width": 800,
+      "height": 785,
+      "total_pixels": 628000,
+      "basic_score": 0.8954832425820104,
+      "file_name": "cinematic_golden_hour_landscape_valley_lake.jpg"
+    },
+    "llm_score": {
+      "success": true,
+      "relevance_score": 100.0,
+      "clarity_score": 95.0,
+      "watermark_score": 100.0,
+      "overall_score": 98.0,
+      "explanation": "The image perfectly matches the search query and prompt, showcasing a stunning landscape captured during golden hour with a strong cinematic aesthetic. The lighting is exceptional, creating dramatic sun rays and rich, warm tones across the valley, lake, and fields. Clarity is excellent, and there are no watermarks, contributing to its high professional quality and artistic merit.",
+      "file_name": "cinematic_golden_hour_landscape_valley_lake.jpg",
+      "caption": "A breathtaking cinematic landscape photograph captured during the golden hour, featuring a serene lake nestled within a verdant valley. Dramatic sun rays cut through the hazy atmosphere, illuminating the rolling hills, a winding road, and vibrant foreground foliage. The warm, rich hues of sunset cast long shadows across the landscape, creating a magical and idyllic scene.",
+      "recommend": true,
+      "error": ""
+    }
+  },
+  {
+    "query": "Cinematic landscape photography with golden hour lighting",
+    "image_info": {
+      "url": "http://proedu.com/cdn/shop/articles/PRO_EDU_Photo_Courses_blog_article_titled_What_Is_the_GoldPhotography-Fundamentals-20241456_x_816Photography-Fundamentals-PRO-EDU_e005fa1d-1e4f-4a20-904f-3bc65a610603.jpg?v=1733083352&width=2048",
+      "img_format": "JPEG",
+      "mode": "RGB",
+      "file_size": 101330,
+      "width": 1000,
+      "height": 560,
+      "total_pixels": 560000,
+      "basic_score": 0.8721212093983048,
+      "file_name": "cinematic_golden_hour_landscape_person_silhouette.jpg"
+    },
+    "llm_score": {
+      "success": true,
+      "relevance_score": 90.0,
+      "clarity_score": 90.0,
+      "watermark_score": 100.0,
+      "overall_score": 95.0,
+      "explanation": "The image perfectly captures the essence of golden hour lighting with a strong cinematic mood, featuring a person silhouetted in a field. While the primary focus is not a vast landscape, the natural setting and beautiful light strongly align with the prompt's request for 'cinematic landscape photography with golden hour lighting.' The clarity is excellent, with intentional bokeh adding to the artistic quality, and there are no visible watermarks.",
+      "file_name": "cinematic_golden_hour_landscape_person_silhouette.jpg",
+      "caption": "A serene and cinematic photograph taken during the golden hour, featuring the silhouette of a person sitting in a field of tall grass and wildflowers, gazing towards the warm, glowing sunset or sunrise. The image is bathed in a rich, orange-yellow light, with beautiful bokeh effects in the foreground and background, creating a dreamlike and evocative atmosphere.",
+      "recommend": true,
+      "error": ""
+    }
+  },
+  {
+    "query": "Cinematic landscape photography with golden hour lighting",
+    "image_info": {
+      "url": "https://photopxl.com/pxl-content/uploads/2023/02/Golden_Hour_1_Ready_for_Web13.jpg",
+      "img_format": "JPEG",
+      "mode": "RGB",
+      "file_size": 1401160,
+      "width": 2000,
+      "height": 1219,
+      "total_pixels": 2438000,
+      "basic_score": 0.6216510083719088,
+      "file_name": "grand_teton_sunset_reflection_cinematic_golden_hour.jpg"
+    },
+    "llm_score": {
+      "success": true,
+      "relevance_score": 100.0,
+      "clarity_score": 95.0,
+      "watermark_score": 100.0,
+      "overall_score": 98.0,
+      "explanation": "The image is an exceptional match for the query, perfectly embodying cinematic landscape photography during golden hour. The dramatic lighting, rich colors, and stunning composition create a highly aesthetic and professional visual. Clarity is excellent, and there are no watermarks.",
+      "file_name": "grand_teton_sunset_reflection_cinematic_golden_hour.jpg",
+      "caption": "A breathtaking cinematic landscape photograph capturing the majestic Teton Range at sunset, with golden hour light illuminating the snow-capped mountain peaks and vibrant, dramatic clouds in the sky. The stunning scene is perfectly reflected in the calm waters of a river in the foreground, flanked by lush green grass and pine trees, creating a serene yet powerful natural vista.",
+      "recommend": true,
+      "error": ""
+    }
+  },
+  {
+    "query": "Cinematic landscape photography with golden hour lighting",
+    "image_info": {
+      "url": "https://www.photopills.com/sites/default/files/tutorials/2020/golden-hour-cover.jpg",
+      "img_format": "JPEG",
+      "mode": "RGB",
+      "file_size": 280362,
+      "width": 738,
+      "height": 471,
+      "total_pixels": 347598,
+      "basic_score": 0.8305600681457299,
+      "file_name": "vestrahorn-iceland-golden-hour-cinematic-landscape-sunset-black-sand-beach.jpg"
+    },
+    "llm_score": {
+      "success": true,
+      "relevance_score": 98.0,
+      "clarity_score": 95.0,
+      "watermark_score": 70.0,
+      "overall_score": 90.0,
+      "explanation": "The image perfectly matches the search query and prompt, showcasing a stunning cinematic landscape during golden hour. The composition is dramatic, with excellent lighting and clarity. The only notable drawback is the 'photopills.com' watermark in the bottom left corner, which slightly reduces the overall score for professional use.",
+      "file_name": "vestrahorn-iceland-golden-hour-cinematic-landscape-sunset-black-sand-beach.jpg",
+      "caption": "A breathtaking cinematic landscape photograph of Vestrahorn mountain in Stokksnes, Iceland, captured during a dramatic golden hour sunset. The iconic jagged peaks are partially shrouded in atmospheric, dark clouds, while the setting sun casts warm, golden light across the black sand beach and tussocks of vibrant green and yellow grass in the foreground. The waves gently break on the shore, adding to the serene yet powerful ambiance of this rugged coastal scene.",
+      "recommend": true,
+      "error": ""
+    }
+  },
+  {
+    "query": "Cinematic wedding photography showcasing couple in romantic setting",
+    "image_info": {
+      "url": "https://thelane.com/wp-content/uploads/2022/02/TildeMitchell-244-2-scaled.jpg",
+      "img_format": "JPEG",
+      "mode": "RGB",
+      "file_size": 674904,
+      "width": 1829,
+      "height": 2560,
+      "total_pixels": 4682240,
+      "basic_score": 0.49566994627495964,
+      "file_name": "cinematic_wedding_kiss_romantic_pergola.jpg"
+    },
+    "llm_score": {
+      "success": true,
+      "relevance_score": 100.0,
+      "clarity_score": 95.0,
+      "watermark_score": 100.0,
+      "overall_score": 98.0,
+      "explanation": "The image perfectly matches the search query and prompt. It exemplifies cinematic wedding photography with its dramatic lighting, moody aesthetic, and romantic composition of the couple under a beautiful pergola. The clarity is excellent, and there are no watermarks. The overall artistic quality and execution are exceptional.",
+      "file_name": "cinematic_wedding_kiss_romantic_pergola.jpg",
+      "caption": "A deeply romantic and cinematic photograph of a newlywed couple sharing an intimate kiss under a vine-covered stone pergola. The dramatic, moody lighting and rich tones highlight their embrace, creating a timeless and elegant wedding moment in a beautiful outdoor setting, with a subtle reflection on the wet ground adding to the atmosphere.",
+      "recommend": true,
+      "error": ""
+    }
+  },
+  {
+    "query": "Cinematic wedding photography showcasing couple in romantic setting",
+    "image_info": {
+      "url": "https://thelane.com/wp-content/uploads/2022/02/Sophie-Tim-Reedit-1-2200x1572.jpg",
+      "img_format": "JPEG",
+      "mode": "RGB",
+      "file_size": 441596,
+      "width": 2200,
+      "height": 1572,
+      "total_pixels": 3458400,
+      "basic_score": 0.515732323518764,
+      "file_name": "cinematic_wedding_couple_romantic_embrace_outdoor.jpg"
+    },
+    "llm_score": {
+      "success": true,
+      "relevance_score": 98.0,
+      "clarity_score": 90.0,
+      "watermark_score": 100.0,
+      "overall_score": 95.0,
+      "explanation": "The image perfectly aligns with the search query and prompt, showcasing a couple in a deeply romantic embrace, styled with a clear cinematic aesthetic through its composition, depth of field, and warm, muted color grading. The clarity is excellent for the chosen style, and there are no watermarks.",
+      "file_name": "cinematic_wedding_couple_romantic_embrace_outdoor.jpg",
+      "caption": "A beautifully composed cinematic photograph of a wedding couple sharing a tender embrace in a romantic, natural outdoor setting. The groom, in a dark suit, holds his bride, dressed in an elegant off-the-shoulder gown, against a soft, sun-drenched backdrop of dried grasses and foliage, evoking a warm, intimate atmosphere.",
+      "recommend": true,
+      "error": ""
+    }
+  },
+  {
+    "query": "Cinematic wedding photography showcasing couple in romantic setting",
+    "image_info": {
+      "url": "https://thelane.com/wp-content/uploads/2022/02/ST-hero-6-2200x1572.jpg",
+      "img_format": "JPEG",
+      "mode": "RGB",
+      "file_size": 371710,
+      "width": 2200,
+      "height": 1572,
+      "total_pixels": 3458400,
+      "basic_score": 0.512159723124894,
+      "file_name": "cinematic_romantic_wedding_couple_portrait.jpg"
+    },
+    "llm_score": {
+      "success": true,
+      "relevance_score": 95.0,
+      "clarity_score": 90.0,
+      "watermark_score": 100.0,
+      "overall_score": 95.0,
+      "explanation": "The image perfectly matches the 'cinematic wedding photography' and 'romantic setting' aspects of the search query and prompt. The moody lighting, composition, and emotional connection between the couple strongly convey a cinematic and romantic atmosphere. Clarity is excellent, and there are no watermarks.",
+      "file_name": "cinematic_romantic_wedding_couple_portrait.jpg",
+      "caption": "A stunning, cinematic portrait of a wedding couple embracing outdoors. The bride, wearing a strapless lace gown, and the groom, in a dark suit, are captured in a tender moment, holding hands and resting their foreheads together. The moody, overcast sky and muted natural landscape in the background enhance the romantic and intimate atmosphere of this cinematic wedding photograph.",
+      "recommend": true,
+      "error": ""
+    }
+  },
+  {
+    "query": "Cinematic wedding photography showcasing couple in romantic setting",
+    "image_info": {
+      "url": "https://thelane.com/wp-content/uploads/2022/02/Sophie-Tim-Reedit-4-scaled.jpg",
+      "img_format": "JPEG",
+      "mode": "RGB",
+      "file_size": 449198,
+      "width": 2560,
+      "height": 1707,
+      "total_pixels": 4369920,
+      "basic_score": 0.4785224582562899,
+      "file_name": "cinematic_black_white_wedding_couple_intimate_portrait.jpg"
+    },
+    "llm_score": {
+      "success": true,
+      "relevance_score": 98.0,
+      "clarity_score": 95.0,
+      "watermark_score": 100.0,
+      "overall_score": 97.0,
+      "explanation": "The image is an excellent match for the search query and prompt, showcasing a cinematic black and white portrait of a wedding couple in a deeply romantic and intimate pose. The shallow depth of field, natural lighting, and emotional connection between the subjects contribute to its high professional quality and aesthetic appeal. Clarity is superb on the subjects, and there are no watermarks.",
+      "file_name": "cinematic_black_white_wedding_couple_intimate_portrait.jpg",
+      "caption": "A stunning black and white, cinematic close-up portrait captures a wedding couple in a tender, intimate moment. The bride, wearing a strapless gown and delicate pearl earrings, smiles with closed eyes as she leans into her groom, who is in a suit with a boutonnière. Their faces are close, almost touching, conveying deep affection and joy. The soft, natural light and shallow depth of field beautifully isolate the couple, emphasizing their romantic connection against a softly blurred background.",
+      "recommend": true,
+      "error": ""
+    }
+  },
+  {
+    "query": "Cinematic wedding photography showcasing couple in romantic setting",
+    "image_info": {
+      "url": "https://thelane.com/wp-content/uploads/2023/04/Wedding-Photographer-London-scaled.jpg",
+      "img_format": "JPEG",
+      "mode": "L",
+      "file_size": 286365,
+      "width": 2066,
+      "height": 2560,
+      "total_pixels": 5288960,
+      "basic_score": 0.4625369374674071,
+      "file_name": "cinematic_wedding_couple_sunset_romantic_motion_blur.jpg"
+    },
+    "llm_score": {
+      "success": true,
+      "relevance_score": 95.0,
+      "clarity_score": 55.0,
+      "watermark_score": 100.0,
+      "overall_score": 85.0,
+      "explanation": "The image is highly relevant to the search query and prompt, perfectly capturing a cinematic and romantic wedding moment. The artistic motion blur, while reducing traditional clarity, enhances the dreamlike and romantic atmosphere, aligning well with a 'cinematic' aesthetic. The composition and lighting (sunset glow) are excellent. The blur is an intentional stylistic choice, not a flaw, which contributes positively to the overall artistic quality.",
+      "file_name": "cinematic_wedding_couple_sunset_romantic_motion_blur.jpg",
+      "caption": "A black and white, cinematically blurred photograph of a newly married couple, hand-in-hand, walking away from the camera into a golden sunset. The bride, in a mermaid-style dress with an open back, and the groom, in a light-colored tuxedo, are silhouetted against the glowing light in a romantic outdoor setting, evoking a dreamlike and intimate atmosphere.",
+      "recommend": true,
+      "error": ""
+    }
+  },
+  {
+    "query": "Luxury product photography with cinematic lighting and composition",
+    "image_info": {
+      "url": "http://promptplaza.store/cdn/shop/files/LuxuryIcyProductPhotography-ChatGPTPrompt.webp?v=1761518052",
+      "img_format": "JPEG",
+      "mode": "RGB",
+      "file_size": 165040,
+      "width": 1200,
+      "height": 1200,
+      "total_pixels": 1440000,
+      "basic_score": 0.88427558675028,
+      "file_name": "luxury_product_photography_cinematic_ice_landscape.jpg"
+    },
+    "llm_score": {
+      "success": true,
+      "relevance_score": 98.0,
+      "clarity_score": 92.0,
+      "watermark_score": 100.0,
+      "overall_score": 95.0,
+      "explanation": "The image perfectly matches the search query and prompt. It showcases luxury product photography with a strong cinematic feel, achieved through dramatic icy landscapes and cool-toned lighting. The composition is excellent, presenting six different products distinctly while maintaining a cohesive high-end aesthetic. Clarity is very good, with sharp details on the products and a well-rendered background. No watermarks are present.",
+      "file_name": "luxury_product_photography_cinematic_ice_landscape.jpg",
+      "caption": "A stunning cinematic shot featuring six different luxury cosmetic and fragrance products, each meticulously placed on ice formations against a dramatic icy mountain backdrop. The products include 'Aurum Essence' perfume, 'Lyonne Matte Black Mineral Moisturizer', 'Glacier Touch Face Cream', 'Frostelle Green Skincare Serum', 'Svalen Elegant' reed diffuser, and 'Arctea Rose-Toned Skincare Essence'. The cool blue and white tones, combined with the sharp details and sophisticated composition, evoke a premium and ethereal aesthetic.",
+      "recommend": true,
+      "error": ""
+    }
+  },
+  {
+    "query": "Luxury product photography with cinematic lighting and composition",
+    "image_info": {
+      "url": "https://welpix.b-cdn.net/wp-content/uploads/2024/02/How-does-luxury-product-photography-differ-from-other-types-of-photography_.webp",
+      "img_format": "WEBP",
+      "mode": "RGBA",
+      "file_size": 63744,
+      "width": 2155,
+      "height": 1200,
+      "total_pixels": 2586000,
+      "basic_score": 0.5993068449889196,
+      "file_name": "luxury_product_bottle_cinematic_lighting_roses.jpg"
+    },
+    "llm_score": {
+      "success": true,
+      "relevance_score": 98.0,
+      "clarity_score": 95.0,
+      "watermark_score": 100.0,
+      "overall_score": 96.0,
+      "explanation": "The image perfectly matches the search query and prompt, showcasing a luxury product with cinematic lighting and a sophisticated composition. The clarity is excellent, and there are no watermarks.",
+      "file_name": "luxury_product_bottle_cinematic_lighting_roses.jpg",
+      "caption": "A sleek, hexagonal gray product bottle with a polished gold cap is elegantly centered, flanked by a large, stylized peach-gold rose and two delicate rosebuds. The scene is bathed in dramatic, cinematic lighting, creating warm highlights and deep shadows against a gradient background that transitions from warm brown to dark gray, conveying a sense of luxury and refined beauty.",
+      "recommend": true,
+      "error": ""
+    }
+  },
+  {
+    "query": "Luxury product photography with cinematic lighting and composition",
+    "image_info": {
+      "url": "https://images.squarespace-cdn.com/content/v1/600d6b502c69ea16574c040d/1fffe08a-1c6b-4134-a0a5-8a22a68d29d6/Outdoor+Lifestyle+Product+Photography+Los+Angeles+Photographer+Brian+Brown-2.jpg",
+      "img_format": "WEBP",
+      "mode": "RGB",
+      "file_size": 124314,
+      "width": 2160,
+      "height": 1441,
+      "total_pixels": 3112560,
+      "basic_score": 0.5324565596795177,
+      "file_name": "bella_vita_luxury_skai_aquatic_perfume_cinematic_sunset_rock.jpg"
+    },
+    "llm_score": {
+      "success": true,
+      "relevance_score": 100.0,
+      "clarity_score": 95.0,
+      "watermark_score": 100.0,
+      "overall_score": 98.0,
+      "explanation": "The image perfectly matches the search query and prompt. It features luxury product photography with exquisite cinematic lighting (golden hour sunset) and a compelling composition, placing the product prominently against a stunning, blurred background. The clarity of the product is excellent, and there are no watermarks.",
+      "file_name": "bella_vita_luxury_skai_aquatic_perfume_cinematic_sunset_rock.jpg",
+      "caption": "A bottle of Bella Vita Luxury Skai Aquatic cologne is elegantly displayed on a textured rock, set against a breathtaking cinematic sunset sky. The gradient blue-green glass bottle with a gold cap is in sharp focus, showcasing the product details, while the soft pink and orange clouds in the background create a luxurious and serene atmosphere.",
+      "recommend": true,
+      "error": ""
+    }
+  },
+  {
+    "query": "Luxury product photography with cinematic lighting and composition",
+    "image_info": {
+      "url": "https://assets.promptbase.com/Images%2F6OxBshbSDy7OYxYslohu%2Fresized%2F1754953035302n_800x800.webp?alt=media&token=0b7ca0a9-43b1-4fae-9fbc-7cd46bd33a52",
+      "img_format": "WEBP",
+      "mode": "RGB",
+      "file_size": 33462,
+      "width": 533,
+      "height": 800,
+      "total_pixels": 426400,
+      "basic_score": 0.8348808888458488,
+      "file_name": "maison_francis_kurkdjian_grand_soir_perfume_cinematic_product_photography.jpg"
+    },
+    "llm_score": {
+      "success": true,
+      "relevance_score": 98.0,
+      "clarity_score": 95.0,
+      "watermark_score": 100.0,
+      "overall_score": 97.0,
+      "explanation": "This image is an outstanding example of luxury product photography, perfectly aligning with the 'cinematic lighting and composition' prompt. The dramatic lighting, rich color palette, and atmospheric smoke create a sophisticated and engaging scene for the premium perfume bottle. The clarity is excellent, capturing intricate details like water droplets and bottle text, without any watermarks.",
+      "file_name": "maison_francis_kurkdjian_grand_soir_perfume_cinematic_product_photography.jpg",
+      "caption": "A stunning close-up of a 'Maison Francis Kurkdjian Paris Grand Soir' perfume bottle, elegantly presented with dramatic, cinematic lighting and a smoky, atmospheric background. The square glass bottle, filled with amber liquid and adorned with a gleaming gold cap, features delicate water droplets, enhancing its luxurious and refreshing appeal on a dark, reflective surface.",
+      "recommend": true,
+      "error": ""
+    }
+  },
+  {
+    "query": "Event photography with cinematic venue lighting and atmosphere",
+    "image_info": {
+      "url": "https://d26oc3sg82pgk3.cloudfront.net/files/media/edit/image/52774/article_aligned%402x.jpg",
+      "img_format": "JPEG",
+      "mode": "RGB",
+      "file_size": 47820,
+      "width": 790,
+      "height": 445,
+      "total_pixels": 351550,
+      "basic_score": 0.8048942499969565,
+      "file_name": "cinematic_studio_lighting_green_screen_production.jpg"
+    },
+    "llm_score": {
+      "success": true,
+      "relevance_score": 75.0,
+      "clarity_score": 90.0,
+      "watermark_score": 100.0,
+      "overall_score": 85.0,
+      "explanation": "The image perfectly captures cinematic lighting and a production atmosphere within a studio venue, which strongly aligns with the 'cinematic lighting' and 'venue' aspects of the query. However, it depicts the behind-the-scenes setup of a shoot rather than an actual 'event photography' scenario where an event is actively being photographed, slightly reducing the direct relevance. The image quality is excellent, with great clarity and professional composition.",
+      "file_name": "cinematic_studio_lighting_green_screen_production.jpg",
+      "caption": "A dynamic wide shot of a film or photography studio setup, featuring multiple professional cinematic lights, large light diffusers, a green screen, and equipment like tripods and a ladder. Two silhouetted crew members are visible, one by a camera rig and another walking, emphasizing the behind-the-scenes production environment and the dramatic lighting.",
+      "recommend": true,
+      "error": ""
+    }
+  },
+  {
+    "query": "Event photography with cinematic venue lighting and atmosphere",
+    "image_info": {
+      "url": "https://images.squarespace-cdn.com/content/v1/60da576b8b440e12699c9263/1662371748371-XELMX4UKGVXUC6TMPO2F/fashion+show+event+venue.jpg",
+      "img_format": "WEBP",
+      "mode": "RGB",
+      "file_size": 88676,
+      "width": 1000,
+      "height": 668,
+      "total_pixels": 668000,
+      "basic_score": 0.9059730586960643,
+      "file_name": "event_venue_cinematic_blue_lighting.jpg"
+    },
+    "llm_score": {
+      "success": true,
+      "relevance_score": 95.0,
+      "clarity_score": 90.0,
+      "watermark_score": 80.0,
+      "overall_score": 90.0,
+      "explanation": "The image perfectly matches the search query and prompt, showcasing an event venue with striking blue cinematic lighting and a captivating atmosphere. The clarity is excellent, with sharp details throughout. A small brand logo 'OASIS' is visible on the balcony, which acts as a form of branding/watermark, slightly reducing that score. Overall, it's a high-quality, professional photograph.",
+      "file_name": "event_venue_cinematic_blue_lighting.jpg",
+      "caption": "An expansive wide-angle photograph capturing the dynamic interior of a modern event venue, bathed in dramatic, futuristic blue cinematic lighting. The scene features a long, reflective main stage with light patterns, overhead speakers, a visible balcony area with brand signage, and detailed ceiling architecture, creating an immersive and atmospheric setting ready for performances or grand events.",
+      "recommend": true,
+      "error": ""
+    }
+  },
+  {
+    "query": "Event photography with cinematic venue lighting and atmosphere",
+    "image_info": {
+      "url": "https://images.stockcake.com/public/f/9/9/f9937870-955e-4a5d-86e2-b8ac18b0794f_large/dramatic-studio-lights-stockcake.jpg",
+      "img_format": "JPEG",
+      "mode": "RGB",
+      "file_size": 30214,
+      "width": 384,
+      "height": 672,
+      "total_pixels": 258048,
+      "basic_score": 0.7732655426792152,
+      "file_name": "cinematic_event_photography_lighting_venue_studio.jpg"
+    },
+    "llm_score": {
+      "success": true,
+      "relevance_score": 95.0,
+      "clarity_score": 95.0,
+      "watermark_score": 100.0,
+      "overall_score": 95.0,
+      "explanation": "The image perfectly captures the essence of cinematic lighting in a venue, featuring various professional photography lights emitting dramatic blue and orange beams in a smoky atmosphere. It is highly relevant to the search query and prompt, with excellent clarity and composition. There are no watermarks.",
+      "file_name": "cinematic_event_photography_lighting_venue_studio.jpg",
+      "caption": "A professional studio or event venue bathed in dramatic cinematic lighting, featuring multiple spotlights and softboxes casting vivid blue and amber light beams through a hazy atmosphere. The scene showcases the setup for high-quality event photography with an intense, theatrical ambiance.",
+      "recommend": true,
+      "error": ""
+    }
+  },
+  {
+    "query": "Professional cinematic portrait photography with dramatic lighting for portfolio showcase",
+    "image_info": {
+      "url": "https://johngress.com/wp-content/uploads//2024/11/Cinematic-headshot-photography-in-Chicago-Zach-111624.Workshop.Chicago6388for-retouching_1200.jpg",
+      "img_format": "JPEG",
+      "mode": "RGB",
+      "file_size": 116031,
+      "width": 800,
+      "height": 1200,
+      "total_pixels": 960000,
+      "basic_score": 0.9070393773938586,
+      "file_name": "cinematic_portrait_man_dramatic_blue_orange_lighting.jpg"
+    },
+    "llm_score": {
+      "success": true,
+      "relevance_score": 98.0,
+      "clarity_score": 95.0,
+      "watermark_score": 100.0,
+      "overall_score": 97.0,
+      "explanation": "The image perfectly embodies the search query and prompt, showcasing a professional cinematic portrait with exceptionally dramatic blue and orange lighting. The clarity is excellent, and the composition, color grading, and subject's pose all contribute to a high-quality, portfolio-worthy image. There are no watermarks present.",
+      "file_name": "cinematic_portrait_man_dramatic_blue_orange_lighting.jpg",
+      "caption": "A striking, professional cinematic portrait of a young man with a mustache, looking directly at the camera. His face and hands are dramatically illuminated by a cool blue light, creating strong highlights and shadows, while a vibrant gradient background transitions from deep orange to red. He wears a dark, textured long-sleeve top, and his hands are positioned expressively around his head, enhancing the artistic and moody atmosphere.",
+      "recommend": true,
+      "error": ""
+    }
+  },
+  {
+    "query": "Professional cinematic portrait photography with dramatic lighting for portfolio showcase",
+    "image_info": {
+      "url": "https://media.macphun.com/img/uploads/macphun/blog/2380/1_5TipsForDramaticPortraitPhotographyThatWillWowYourAudience.jpg?q=75&w=1710&h=906&resize=cover",
+      "img_format": "JPEG",
+      "mode": "RGB",
+      "file_size": 66402,
+      "width": 1710,
+      "height": 906,
+      "total_pixels": 1549260,
+      "basic_score": 0.8571317986371205,
+      "file_name": "professional-cinematic-portrait-dramatic-lighting.jpg"
+    },
+    "llm_score": {
+      "success": true,
+      "relevance_score": 98.0,
+      "clarity_score": 95.0,
+      "watermark_score": 100.0,
+      "overall_score": 97.0,
+      "explanation": "The image is an excellent match for 'cinematic photography portrait with professional and dramatic lighting'. The lighting is the most striking feature, creating visible light beams and strong contrasts, perfectly aligning with a 'cinematic' and 'dramatic' aesthetic suitable for a portfolio. The subject is sharp, well-composed, and there are no watermarks.",
+      "file_name": "professional-cinematic-portrait-dramatic-lighting.jpg",
+      "caption": "A striking professional cinematic portrait of a woman, characterized by dramatic warm lighting emanating from a visible spotlight or projector. The light creates distinct beams and highlights her face and wavy, dark hair, casting deep shadows for a classic film noir or moody aesthetic. Her intense gaze and elegant pose, with one hand resting on her shoulder, contribute to the captivating and high-quality composition, making it an ideal piece for a photography portfolio showcasing expert lighting techniques.",
+      "recommend": true,
+      "error": ""
+    }
+  },
+  {
+    "query": "Professional cinematic portrait photography with dramatic lighting for portfolio showcase",
+    "image_info": {
+      "url": "https://images.squarespace-cdn.com/content/v1/5aee389b3c3a531e6245ae76/956666da-e9a6-43cf-84a7-a48e6db352a5/alastair.batchelor_cinematic.headshots_01.jpg",
+      "img_format": "WEBP",
+      "mode": "RGB",
+      "file_size": 167446,
+      "width": 1872,
+      "height": 590,
+      "total_pixels": 1104480,
+      "basic_score": 0.8741716149638924,
+      "file_name": "cinematic_dramatic_portraits_professional_lighting_portfolio.jpg"
+    },
+    "llm_score": {
+      "success": true,
+      "relevance_score": 95.0,
+      "clarity_score": 90.0,
+      "watermark_score": 100.0,
+      "overall_score": 95.0,
+      "explanation": "The image perfectly aligns with the search query and prompt. It features three distinct cinematic portraits, each showcasing professional and dramatic lighting techniques with excellent color grading and composition. The quality is highly suitable for a portfolio showcase.",
+      "file_name": "cinematic_dramatic_portraits_professional_lighting_portfolio.jpg",
+      "caption": "A triptych of professional cinematic portraits, each demonstrating dramatic and artistic lighting. The left portrait features a dark-haired woman leaning on a handrail with warm, moody lighting. The center portrait captures a man's intense gaze with striking green and red neon-style lighting. The right portrait shows a blonde woman resting her head, bathed in soft, cool-toned ambient light. These high-quality images exemplify professional photography suitable for an artistic portfolio.",
+      "recommend": true,
+      "error": ""
+    }
+  },
+  {
+    "query": "Cinematic street photography with urban atmosphere",
+    "image_info": {
+      "url": "https://i.pinimg.com/736x/9a/75/93/9a75935e167af0e67a92b7382d3ae90e.jpg",
+      "img_format": "JPEG",
+      "mode": "RGB",
+      "file_size": 83433,
+      "width": 736,
+      "height": 920,
+      "total_pixels": 677120,
+      "basic_score": 0.8844090616710778,
+      "file_name": "moody_urban_street_photography_person_red_jacket_alleyway.jpg"
+    },
+    "llm_score": {
+      "success": true,
+      "relevance_score": 98.0,
+      "clarity_score": 90.0,
+      "watermark_score": 100.0,
+      "overall_score": 95.0,
+      "explanation": "The image perfectly embodies 'street photography urban cinematic mood' with its striking composition, muted color palette, and a lone figure in a red coat providing a powerful focal point. The urban setting is clear, and the overall aesthetic is highly cinematic. Clarity is excellent, and there are no visible watermarks.",
+      "file_name": "moody_urban_street_photography_person_red_jacket_alleyway.jpg",
+      "caption": "An evocative overhead view of a person in a bright red coat walking down a wet, narrow urban alleyway, flanked by tall buildings with fire escapes and overhead structures. The scene, typical of cinematic street photography, captures a moody, atmospheric urban landscape, possibly after rain, with reflections on the damp pavement and a solitary figure creating a sense of drama.",
+      "recommend": true,
+      "error": ""
+    }
+  },
+  {
+    "query": "Cinematic street photography with urban atmosphere",
+    "image_info": {
+      "url": "https://www.theinspiredeye.net/wp-content/uploads/2020/04/cinematic-street-photography.jpg",
+      "img_format": "JPEG",
+      "mode": "RGB",
+      "file_size": 50477,
+      "width": 900,
+      "height": 507,
+      "total_pixels": 456300,
+      "basic_score": 0.8381371554271057,
+      "file_name": "cinematic_urban_street_photography_old_man_smoking.jpg"
+    },
+    "llm_score": {
+      "success": true,
+      "relevance_score": 100.0,
+      "clarity_score": 85.0,
+      "watermark_score": 100.0,
+      "overall_score": 95.0,
+      "explanation": "The image perfectly matches the search query and prompt, embodying 'street photography,' 'urban atmosphere,' and a strong 'cinematic mood.' The composition, lighting, and color grading are exceptionally well-executed, contributing to a professional and evocative aesthetic. The clarity on the main subject is good, with intentional atmospheric focus and grain that enhance the cinematic feel. No watermarks are present.",
+      "file_name": "cinematic_urban_street_photography_old_man_smoking.jpg",
+      "caption": "A poignant, cinematic street photograph captures an elderly Asian man with grey hair, dressed in a brown shirt and dark trousers, sitting contemplatively on a wooden bench in an urban alleyway, smoking a cigarette. The atmospheric lighting creates a mood of quiet reflection, with a bicycle visible in the softly blurred background, hinting at daily life. The image features a wide cinematic aspect ratio with black bars, enhancing its film-like quality.",
+      "recommend": true,
+      "error": ""
+    }
+  },
+  {
+    "query": "Cinematic street photography with urban atmosphere",
+    "image_info": {
+      "url": "https://media.greatbigphotographyworld.com/wp-content/uploads/2022/04/cinematic-street-photography-1.jpg",
+      "img_format": "JPEG",
+      "mode": "RGB",
+      "file_size": 92821,
+      "width": 1000,
+      "height": 562,
+      "total_pixels": 562000,
+      "basic_score": 0.871714201761294,
+      "file_name": "cinematic_urban_night_street_photography_neon_lights.jpg"
+    },
+    "llm_score": {
+      "success": true,
+      "relevance_score": 100.0,
+      "clarity_score": 90.0,
+      "watermark_score": 100.0,
+      "overall_score": 95.0,
+      "explanation": "The image perfectly encapsulates 'cinematic street photography with urban atmosphere.' The dark, moody lighting, vibrant neon signs, and dynamic composition create a strong cinematic feel. Clarity is excellent for a night shot, with intentional motion blur on the car enhancing the mood, and there are no watermarks.",
+      "file_name": "cinematic_urban_night_street_photography_neon_lights.jpg",
+      "caption": "A striking night scene of a bustling urban street, bathed in the vibrant glow of neon signs and artificial light. An overhead sign with Chinese characters illuminates the street, which features parked cars and a moving dark vehicle with a slight motion blur. The overall atmosphere evokes a cinematic mood, showcasing the captivating allure of city life after dark with strong blue, red, and orange hues.",
+      "recommend": true,
+      "error": ""
+    }
+  },
+  {
+    "query": "Professional headshot of a photographer for about section",
+    "image_info": {
+      "url": "https://images.squarespace-cdn.com/content/v1/64dbc795f3de7829b946e138/04446c1a-2eec-4a2e-b654-6a2e72290671/Seattle-headshots-photography-studio-1.jpg",
+      "img_format": "WEBP",
+      "mode": "RGB",
+      "file_size": 137620,
+      "width": 2000,
+      "height": 1333,
+      "total_pixels": 2666000,
+      "basic_score": 0.5917066676356026,
+      "file_name": "professional_photographer_studio_headshot_woman_smiling.jpg"
+    },
+    "llm_score": {
+      "success": true,
+      "relevance_score": 95.0,
+      "clarity_score": 98.0,
+      "watermark_score": 100.0,
+      "overall_score": 97.0,
+      "explanation": "The image is a high-quality, professional studio headshot of a woman with excellent clarity and professional lighting, making it highly relevant for an 'about section' for a photographer. The subject's warm, inviting smile and direct gaze contribute to a strong professional presence. There are no watermarks present.",
+      "file_name": "professional_photographer_studio_headshot_woman_smiling.jpg",
+      "caption": "A warm and inviting professional studio headshot of an African American woman with dark, voluminous curly hair, smiling genuinely at the camera. She is wearing a dark, boat-neck top and is set against a plain dark gray background, characteristic of a professional studio portrait. This image is ideal for an 'about us' page or professional profile for a photographer.",
+      "recommend": true,
+      "error": ""
+    }
+  },
+  {
+    "query": "Professional headshot of a photographer for about section",
+    "image_info": {
+      "url": "https://image10.photobiz.com/3699/7_20200401151717_11130543_large.jpg",
+      "img_format": "JPEG",
+      "mode": "RGB",
+      "file_size": 85506,
+      "width": 618,
+      "height": 865,
+      "total_pixels": 534570,
+      "basic_score": 0.8580638608102152,
+      "file_name": "professional_woman_studio_headshot_business_portrait.jpg"
+    },
+    "llm_score": {
+      "success": true,
+      "relevance_score": 95.0,
+      "clarity_score": 100.0,
+      "watermark_score": 100.0,
+      "overall_score": 95.0,
+      "explanation": "The image is highly relevant to the search query and prompt, featuring a professional studio headshot of a woman in business attire against a neutral background. The clarity is excellent, with sharp focus and good lighting. There are no watermarks. The composition and overall quality are outstanding, making it ideal for a professional 'about' section.",
+      "file_name": "professional_woman_studio_headshot_business_portrait.jpg",
+      "caption": "A professional studio portrait of a woman with long dark hair, wearing a navy blue business blazer over a white collared shirt, with her arms crossed. She has a pleasant and confident expression, looking directly at the camera against a smooth dark grey background. This high-quality image is suitable for corporate profiles or an 'about' page.",
+      "recommend": true,
+      "error": ""
+    }
+  },
+  {
+    "query": "Professional headshot of a photographer for about section",
+    "image_info": {
+      "url": "https://images.squarespace-cdn.com/content/v1/54a07cc0e4b003c6ce1b07a5/1677606754816-GPGSV9PXYR3ULINXJDLW/puma-headshots-9.jpg?format=2500w",
+      "img_format": "WEBP",
+      "mode": "RGB",
+      "file_size": 207964,
+      "width": 2500,
+      "height": 1667,
+      "total_pixels": 4167500,
+      "basic_score": 0.4808642206251155,
+      "file_name": "professional_woman_photographer_headshot_studio_portrait.jpg"
+    },
+    "llm_score": {
+      "success": true,
+      "relevance_score": 95.0,
+      "clarity_score": 98.0,
+      "watermark_score": 100.0,
+      "overall_score": 95.0,
+      "explanation": "The image is an excellent professional headshot, perfectly aligned with the search query and prompt. It features a smiling woman in professional attire against a clean, dark studio-like background, making it ideal for an 'about section' portrait for a photographer. The clarity, composition, and lighting are outstanding.",
+      "file_name": "professional_woman_photographer_headshot_studio_portrait.jpg",
+      "caption": "A warm and inviting professional studio portrait of a smiling Asian woman, suitable for a photographer's 'about' section. She is wearing a stylish beige blazer over a white top, with long, wavy brown hair, and looks directly at the camera against a minimalist dark gray background.",
+      "recommend": true,
+      "error": ""
+    }
+  }
+]
