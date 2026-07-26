@@ -3,67 +3,141 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Francesko Muca | Wedding Photographer in Vlora</title>
+  <title>Francesko Muca | Wedding Photographer</title>
   <style>
-    body {
-      font-family: 'Montserrat', sans-serif;
-      margin: 0;
-      padding: 2rem;
-      background: #fff9f0;
-      color: #3a3a3a;
-      line-height: 1.6;
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { 
+      font-family: 'Montserrat', sans-serif; 
+      height: 100vh; 
+      width: 100%;
+      overflow-x: hidden;
+      color: #f8f8f8;
     }
-    .intro {
+    .hero {
+      height: 100vh;
+      background: url('https://scontent-iad3-2.cdninstagram.com/v/t51.71878-15/711209759_2375728202935914_4394574380515151665_n.jpg?_nc_cat=108&_nc_sid=18de74&_nc_ohc=4QXxR2kRqgYQ7kNvwF3YjXQ&_nc_ht=scontent-iad3-2.cdninstagram.com') no-repeat center/cover;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
       text-align: center;
-      margin: 3rem 0;
-      padding: 2rem;
-      background: rgba(255, 255, 255, 0.6);
-      border-radius: 12px;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+      padding: 0 2rem;
+      background-attachment: fixed;
     }
-    .intro h1 {
-      font-size: 3.2rem;
-      margin-bottom: 1rem;
-      color: #d4af37;
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.3));
+      z-index: 0;
     }
-    .intro p {
-      font-size: 1.4rem;
-      max-width: 700px;
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      max-width: 900px;
       margin: 0 auto;
+      text-shadow: 0 2px 10px rgba(0,0,0,0.3);
     }
-    .photos {
+    .hero-content h1 {
+      font-size: 4.8rem;
+      color: #d4af37;
+      letter-spacing: 1px;
+      margin-bottom: 1rem;
+      font-weight: 700;
+    }
+    .hero-content p {
+      font-size: 2.2rem;
+      opacity: 0.9;
+      font-weight: 300;
+      margin-bottom: 0;
+    }
+    .projects {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-      gap: 15px;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 24px;
+      padding: 3rem 3rem 2rem;
+      margin-top: 20px;
     }
-    .photo {
-      aspect-ratio: 4/3;
+    .project {
       border-radius: 8px;
       overflow: hidden;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      height: 300px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+      position: relative;
     }
-    .photo img {
+    .project-img {
       width: 100%;
       height: 100%;
       object-fit: cover;
-      transition: transform 0.3s;
+      transition: transform 0.4s ease;
     }
-    .photo:hover img {
+    .project:hover .project-img {
       transform: scale(1.05);
+    }
+    .project-info {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(0,0,0,0.5);
+      padding: 15px;
+      text-align: center;
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+    .project:hover .project-info {
+      opacity: 1;
+    }
+    .project-info h3 {
+      font-size: 1.5rem;
+      margin-bottom: 5px;
+    }
+    .project-info p {
+      font-size: 1.1rem;
+      opacity: 0.9;
     }
   </style>
 </head>
 <body>
-  <div class="intro">
-    <h1>Francesko Muca</h1>
-    <p>Wedding photographer capturing moments in Vlora, Albania</p>
+  <div class="hero">
+    <div class="hero-content">
+      <h1>Francesko Muca</h1>
+      <p>Wedding photographer capturing moments in Vlora, Albania</p>
+    </div>
   </div>
 
-  <div class="photos">
-    <div class="photo"><img src="https://scontent-iad3-2.cdninstagram.com/v/t51.71878-15/711209759_2375728202935914_4394574380515151665_n.jpg?_nc_cat=108&_nc_sid=18de74&_nc_ohc=4QXxR2kRqgYQ7kNvwF3YjXQ&_nc_ht=scontent-iad3-2.cdninstagram.com" alt="Vlora wedding"></div>
-    <div class="photo"><img src="https://scontent-iad6-1.cdninstagram.com/v/t51.82787-15/726494327_18538039348077298_8330534287575244300_n.heic?_nc_cat=102&_nc_sid=18de74&_nc_ohc=2zKJ5eB5xZsQ7kNvwEYbXQk&_nc_ht=scontent-iad6-1.cdninstagram.com" alt="Wedding bouquet"></div>
-    <div class="photo"><img src="https://scontent-iad3-1.cdninstagram.com/v/t51.71878-15/719068758_2096305100948663_3112838453260849591_n.jpg?_nc_cat=105&_nc_sid=18de74&_nc_ohc=1e0Q5dXb5d0Q7kNvwE1Qh1s&_nc_ht=scontent-iad3-1.cdninstagram.com" alt="Couple laughing"></div>
-    <div class="photo"><img src="https://scontent-iad3-2.cdninstagram.com/v/t51.71878-15/711513548_1526324689199651_4148283860791704006_n.jpg?_nc_cat=104&_nc_sid=18de74&_nc_ohc=QZk4e7JqY2oQ7kNvwEqYc0Y&_nc_ht=scontent-iad3-2.cdninstagram.com" alt="Sunset wedding"></div>
+  <div class="projects">
+    <div class="project">
+      <img src="https://scontent-iad3-2.cdninstagram.com/v/t51.71878-15/711209759_2375728202935914_4394574380515151665_n.jpg?_nc_cat=108&_nc_sid=18de74&_nc_ohc=4QXxR2kRqgYQ7kNvwF3YjXQ&_nc_ht=scontent-iad3-2.cdninstagram.com" alt="Vlora wedding" class="project-img">
+      <div class="project-info">
+        <h3>Vlora wedding</h3>
+        <p>Traditional Albanian wedding</p>
+      </div>
+    </div>
+    <div class="project">
+      <img src="https://scontent-iad6-1.cdninstagram.com/v/t51.82787-15/726494327_18538039348077298_8330534287575244300_n.heic?_nc_cat=102&_nc_sid=18de74&_nc_ohc=2zKJ5eB5xZsQ7kNvwEYbXQk&_nc_ht=scontent-iad6-1.cdninstagram.com" alt="Wedding bouquet" class="project-img">
+      <div class="project-info">
+        <h3>Wedding bouquet</h3>
+        <p>Floral detail from Vlora</p>
+      </div>
+    </div>
+    <div class="project">
+      <img src="https://scontent-iad3-1.cdninstagram.com/v/t51.71878-15/719068758_2096305100948663_3112838453260849591_n.jpg?_nc_cat=105&_nc_sid=18de74&_nc_ohc=1e0Q5dXb5d0Q7kNvwE1Qh1s&_nc_ht=scontent-iad3-1.cdninstagram.com" alt="Couple laughing" class="project-img">
+      <div class="project-info">
+        <h3>Couple laughing</h3>
+        <p>Vlora sunset moment</p>
+      </div>
+    </div>
+    <div class="project">
+      <img src="https://scontent-iad3-2.cdninstagram.com/v/t51.71878-15/711513548_1526324689199651_4148283860791704006_n.jpg?_nc_cat=104&_nc_sid=18de74&_nc_ohc=QZk4e7JqY2oQ7kNvwEqYc0Y&_nc_ht=scontent-iad3-2.cdninstagram.com" alt="Sunset wedding" class="project-img">
+      <div class="project-info">
+        <h3>Sunset wedding</h3>
+        <p>Albanian coastline</p>
+      </div>
+    </div>
   </div>
 </body>
 </html>
