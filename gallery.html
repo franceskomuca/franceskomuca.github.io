@@ -2,97 +2,31 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cinematic Gallery | Francesko Muca</title>
+  <title>Full Gallery | Francesko Muca</title>
   <style>
-    /* Reused minimal CSS from homepage */
-    body {
-      background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
-      min-height: 100vh;
-      padding: 5rem 0;
-    }
-    .gallery-grid {
+    body { background: #fff9f0; padding: 2rem; }
+    .gallery {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-      gap: 20px;
-      max-width: 1400px;
-      margin: 0 auto;
-      padding: 0 2rem;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 15px;
     }
-    .gallery-item {
-      aspect-ratio: 3/4;
-      border-radius: 5px;
-      overflow: hidden;
-      position: relative;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-      transition: all 0.3s ease;
-      background: #000;
-    }
-    .gallery-item:hover {
-      transform: scale(1.02);
-      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.7);
-    }
-    .gallery-item img {
+    .photo img {
       width: 100%;
       height: 100%;
       object-fit: cover;
-      display: block;
-      transition: all 0.5s ease;
-    }
-    .caption {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      padding: 1rem;
-      background: rgba(0,0,0,0.7);
-      color: var(--text);
-      font-size: 0.9rem;
-      opacity: 0;
-      transition: all 0.3s ease;
-    }
-    .gallery-item:hover .caption {
-      opacity: 1;
-      bottom: 5px;
-      backdrop-filter: blur(5px);
+      border-radius: 8px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
     }
   </style>
 </head>
 <body>
-  <div class="gallery-grid">
-    <!-- All 8 Instagram posts -->
-    <div class="gallery-item">
-      <img src="https://scontent-iad3-2.cdninstagram.com/v/t51.71878-15/711209759_2375728202935914_4394574380515151665_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=108&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=gQ_U5yNdAUgQ7kNvwHjT-9j&_nc_oc=AdpOzYjva0mnju5q7X_zS-dUf7MkTX3cz0pJOfjn3hMeBW9H8vWEuk9rg65WKmhBRF4&_nc_zt=23&_nc_ht=scontent-iad3-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=EfVPc1hoDkDaVL1hs6r1hQ&_nc_tpa=Q5bMBQEBlzVgptLDz7_Vkeqfp90HvqT4NmLVxnU6cvbcY6_b0Y3OWOEz1NNdD3E8OnaOF99NXEncRvxP&oh=00_AQD_uSehgul-8QYEARH0ldMOpHK5_dEd9qKRka7nLbRBGg&oe=6A6B766C" alt="Vlora Sunset">
-      <div class="caption">Vlora Sunset | Cinematic Transition</div>
-    </div>
-    <div class="gallery-item">
-      <img src="https://scontent-iad6-1.cdninstagram.com/v/t51.82787-15/726494327_18538039348077298_8330534287575244300_n.heic?stp=dst-jpg_e35_tt6&_nc_cat=102&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=7bP5osTqtc0Q7kNvwGnFmZ9&_nc_oc=AdpWMa0MXzVkd1GcZFsSOsnhE8H-MF_p3EO1zwtjGyZRgn77t5q5r-izzPjdXsAWI6E&_nc_zt=23&_nc_ht=scontent-iad6-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=EfVPc1hoDkDaVL1hs6r1hQ&_nc_tpa=Q5bMBQHIX7EU4Q2_G_RsO0Y24FN2DhsvQMcbULWyHM3p_40fOkzDM_r2p9yLMQqMMoVjp9n63yvF2WYO&oh=00_AQCfJz2-CQcjG1Q5qQaHhK_SyZ-V0LTvyDEzW0Vl2m6UBg&oe=6A6B7AE4" alt="Cinematic Transition">
-      <div class="caption">MLU Direct | Vlora Transition</div>
-    </div>
-    <div class="gallery-item">
-      <img src="https://scontent-iad3-1.cdninstagram.com/v/t51.71878-15/719068758_2096305100948663_3112838453260849591_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=105&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=5qDcFewx150Q7kNvwEwoYkd&_nc_oc=AdqAdBR3KOyqfJ_YPj_f9y4ZNcjhkU5mgsAOfCd2Tc53A6ZJ--z42OGInPOmKvtiV64&_nc_zt=23&_nc_ht=scontent-iad3-2.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=EfVPc1hoDkDaVL1hs6r1hQ&_nc_tpa=Q5bMBQESLr-f207IrdLPvKiL3CxJEI-NOV6ZD_Hvgqu3ZdKMDa0CTHFmti0bzKbVlD9aEZvgbdlzjwCI&oh=00_AQCHpDuzwAyJd_vcDNEOLbwMHUF1l9zMT7OROnvD3qXx4A&oe=6A6B8077" alt="City Lights">
-      <div class="caption">City Lights at Night | Vlora</div>
-    </div>
-    <div class="gallery-item">
-      <img src="https://scontent-iad3-2.cdninstagram.com/v/t51.71878-15/711513548_1526324689199651_4148283860791704006_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=104&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=Z6iQ4wqjF7QQ7kNvwEbhXSG&_nc_oc=Adq4NQ974lvTHR60ZMQoeCrbWcyt4JRLfe6DAheE6KedYgOe_FtVxTLfaVipliCbJjw&_nc_zt=23&_nc_ht=scontent-iad3-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=EfVPc1hoDkDaVL1hs6r1hQ&_nc_tpa=Q5bMBQFOegjP9CUCCJe03SU6UzESTI97TnOkfghhma7CAi0ew4TSuZLFAUgZtdilSiwlMKh7d6ln5Xw3&oh=00_AQD5R5bBwd2EKCregbHZV_oNgeVep0MEN3z-TUA4Q188fw&oe=6A6B7AD0" alt="Cinematic Reel">
-      <div class="caption">When the Beat Drops on the \"Fa\"</div>
-    </div>
-    <div class="gallery-item">
-      <img src="https://scontent-iad6-1.cdninstagram.com/v/t51.71878-15/711737030_1001522396142202_1307741354993498321_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=109&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=KUXRLMeThDIQ7kNvwHhMNlx&_nc_oc=AdqvMIsVTUXV9v6BpO2RJVNHcjAzVATDwAfOxRFwmqQC5N4nKpt3pbzglpJBuqALlVU&_nc_zt=23&_nc_ht=scontent-iad6-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=EfVPc1hoDkDaVL1hs6r1hQ&_nc_tpa=Q5bMBQG887ZM4OHc3MKatbP70GxXpckovXUAnaMPM3rgpLopWoCp-ltiqPPTvDEsnvyQfmY3ukMMUDfb&oh=00_AQCjSmlhAg3bnkQumryQ6AkEotYcTEn5E_V1JALV0Do5kA&oe=6A6B9B44" alt="Audio Sync">
-      <div class="caption">Audio Sync & Visual Timing</div>
-    </div>
-    <div class="gallery-item">
-      <img src="https://scontent-iad6-1.cdninstagram.com/v/t51.71878-15/657926601_18525940195077298_7305268650875481038_n.heic?stp=dst-jpg_e35_tt6&_nc_cat=109&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=fb8EohOIOjMQ7kNvwG6enYs&_nc_oc=AdpLexzpALg82XVeLk9-B7P8N9QyIuKHAo6TPddlN-BEuI07vdRXaKtcabrOeZNtrlc&_nc_zt=23&_nc_ht=scontent-iad6-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=EfVPc1hoDkDaVL1hs6r1hQ&_nc_tpa=Q5bMBQFbe_zxxrwNnMH5YB5o-icZWARr20-HbsREOl8P3eRGmyAqQ84SzguETXA0IsR7L9gvYZDfJ9u3&oh=00_AQAkTqz8mr_WN6TQB9SB24sOqiP_yOjwlJaWWJRUDjUfCg&oe=6A6BA0D8" alt="Sunset">
-      <div class="caption">Sunshine & Deep Breaths</div>
-    </div>
-    <div class="gallery-item">
-      <img src="https://scontent-iad3-2.cdninstagram.com/v/t51.71878-15/749043527_2356986165110728_4329577175691767890_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=105&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=DN3PCn2SP4sQ7kNvwGnFmZ9&_nc_oc=AdpWMa0MXzVkd1GcZFsSOsnhE8H-MF_p3EO1zwtjGyZRgn77t5q5r-izzPjdXsAWI6E&_nc_zt=23&_nc_ht=scontent-iad3-2.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=EfVPc1hoDkDaVL1hs6r1hQ&_nc_tpa=Q5bMBQHIX7EU4Q2_G_RsO0Y24FN2DhsvQMcbULWyHM3p_40fOkzDM_r2p9yLMQqMMoVjp9n63yvF2WYO&oh=00_AQCfJz2-CQcjG1Q5qQaHhK_SyZ-V0LTvyDEzW0Vl2m6UBg&oe=6A6B7AE4" alt="MLU Direct">
-      <div class="caption">Nga \"MLU\" direkt e në Lungomare</div>
-    </div>
-    <div class="gallery-item">
-      <img src="https://scontent-iad3-2.cdninstagram.com/v/t51.71878-15/719068758_2096305100948663_3112838453260849591_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=105&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=5qDcFewx150Q7kNvwEwoYkd&_nc_oc=AdqAdBR3KOyqfJ_YPj_f9y4ZNcjhkU5mgsAOfCd2Tc53A6ZJ--z42OGInPOmKvtiV64&_nc_zt=23&_nc_ht=scontent-iad3-2.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=EfVPc1hoDkDaVL1hs6r1hQ&_nc_tpa=Q5bMBQESLr-f207IrdLPvKiL3CxJEI-NOV6ZD_Hvgqu3ZdKMDa0CTHFmti0bzKbVlD9aEZvgbdlzjwCI&oh=00_AQCHpDuzwAyJd_vcDNEOLbwMHUF1l9zMT7OROnvD3qXx4A&oe=6A6B8077" alt="Cinematic Reel">
-      <div class="caption">He Said \"MLUE\" and Video Edit Took it Personally</div>
-    </div>
+  <div class="gallery">
+    <div class="photo"><img src="https://scontent-iad3-2.cdninstagram.com/v/t51.71878-15/711209759_2375728202935914_4394574380515151665_n.jpg?_nc_cat=108&_nc_sid=18de74&_nc_ohc=4QXxR2kRqgYQ7kNvwF3YjXQ&_nc_ht=scontent-iad3-2.cdninstagram.com" alt=""></div>
+    <div class="photo"><img src="https://scontent-iad6-1.cdninstagram.com/v/t51.82787-15/726494327_18538039348077298_8330534287575244300_n.heic?_nc_cat=102&_nc_sid=18de74&_nc_ohc=2zKJ5eB5xZsQ7kNvwEYbXQk&_nc_ht=scontent-iad6-1.cdninstagram.com" alt=""></div>
+    <div class="photo"><img src="https://scontent-iad3-1.cdninstagram.com/v/t51.71878-15/719068758_2096305100948663_3112838453260849591_n.jpg?_nc_cat=105&_nc_sid=18de74&_nc_ohc=1e0Q5dXb5d0Q7kNvwE1Qh1s&_nc_ht=scontent-iad3-1.cdninstagram.com" alt=""></div>
+    <div class="photo"><img src="https://scontent-iad3-2.cdninstagram.com/v/t51.71878-15/711513548_1526324689199651_4148283860791704006_n.jpg?_nc_cat=104&_nc_sid=18de74&_nc_ohc=QZk4e7JqY2oQ7kNvwEqYc0Y&_nc_ht=scontent-iad3-2.cdninstagram.com" alt=""></div>
+    <div class="photo"><img src="https://scontent-iad3-1.cdninstagram.com/v/t51.71878-15/719068758_2096305100948663_3112838453260849591_n.jpg?_nc_cat=105&_nc_sid=18de74&_nc_ohc=1e0Q5dXb5d0Q7kNvwE1Qh1s&_nc_ht=scontent-iad3-1.cdninstagram.com" alt=""></div>
+    <div class="photo"><img src="https://scontent-iad3-2.cdninstagram.com/v/t51.71878-15/749043527_2356986165110728_4329577175691767890_n.jpg?_nc_cat=105&_nc_sid=18de74&_nc_ohc=5QdZ0mJj5xgQ7kNvwF2bRcY&_nc_ht=scontent-iad3-2.cdninstagram.com" alt=""></div>
   </div>
 </body>
 </html>
