@@ -1,0 +1,236 @@
+/* =========================================================
+   Francesko Muca — Photographer & Videographer Portfolio
+   Dark, cinematic single-page design (inspired by Behance
+   photographer/videographer portfolio layouts).
+   Edit the colours in :root to re-skin the whole site.
+   ========================================================= */
+
+:root {
+  --bg: #0a0a0a;          /* page background (near-black) */
+  --bg-soft: #141414;     /* cards / raised sections */
+  --text: #f5f5f5;        /* primary text */
+  --muted: #9a9a9a;       /* secondary text */
+  --line: #2a2a2a;        /* hairline dividers */
+  --gold: #c9a86a;        /* warm accent (category labels, dividers) */
+  --max: 1280px;          /* content max width */
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+img { display: block; max-width: 100%; }
+
+a { color: inherit; text-decoration: none; }
+
+.wrap { max-width: var(--max); margin: 0 auto; padding: 0 24px; }
+
+/* ---------- Display type ---------- */
+.display {
+  font-family: "Anton", "Oswald", "Arial Narrow", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  line-height: 0.92;
+}
+
+.eyebrow {
+  font-size: 12px;
+  letter-spacing: 0.35em;
+  text-transform: uppercase;
+  color: var(--gold);
+  font-weight: 600;
+}
+
+/* =========================================================
+   HERO
+   ========================================================= */
+.hero { padding: 64px 0 0; }
+
+.hero-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+
+.hero-title {
+  font-size: clamp(64px, 14vw, 200px);
+  color: var(--text);
+}
+
+.hero-vertical {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  font-family: "Oswald", "Arial Narrow", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  font-size: clamp(14px, 1.6vw, 22px);
+  color: var(--muted);
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+}
+
+/* Polaroid portrait */
+.polaroid {
+  background: #f3f1ec;
+  padding: 12px 12px 44px;
+  transform: rotate(3deg);
+  box-shadow: 0 24px 60px rgba(0,0,0,0.55);
+  width: 240px;
+  flex: 0 0 auto;
+}
+.polaroid img { width: 100%; height: 260px; object-fit: cover; }
+.polaroid .cap {
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: #1a1a1a;
+  font-size: 13px;
+  text-align: center;
+  margin-top: 12px;
+}
+
+.hero-banner {
+  margin-top: 40px;
+  width: 100%;
+  height: clamp(280px, 42vw, 560px);
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+/* Profile bar */
+.profile-bar {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 22px 0 40px;
+  border-bottom: 1px solid var(--line);
+  flex-wrap: wrap;
+}
+.profile-bar .avatar {
+  width: 56px; height: 56px; border-radius: 50%;
+  object-fit: cover; border: 2px solid var(--gold);
+}
+.profile-bar .name { font-weight: 700; font-size: 18px; }
+.profile-bar .role { color: var(--muted); font-size: 14px; }
+.profile-bar .socials { margin-left: auto; display: flex; gap: 14px; }
+.profile-bar .socials a {
+  width: 40px; height: 40px; border: 1px solid var(--line);
+  border-radius: 50%; display: grid; place-items: center;
+  color: var(--muted); transition: .25s;
+}
+.profile-bar .socials a:hover { color: var(--bg); background: var(--gold); border-color: var(--gold); }
+
+/* =========================================================
+   ABOUT — "WHO I AM?"
+   ========================================================= */
+.section { padding: 80px 0; }
+
+.about {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 56px;
+  align-items: center;
+}
+.about .me-card {
+  background: var(--bg-soft);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  overflow: hidden;
+}
+.about .me-card .tag {
+  background: var(--gold); color: #1a1a1a;
+  font-family: "Oswald", sans-serif; text-transform: uppercase;
+  letter-spacing: 0.25em; font-size: 12px;
+  padding: 8px 14px; display: inline-block;
+}
+.about .me-card img { width: 100%; height: 380px; object-fit: cover; }
+
+.about h2 {
+  font-size: clamp(40px, 6vw, 84px);
+  margin: 18px 0 22px;
+}
+.about p { color: var(--muted); max-width: 52ch; margin-bottom: 16px; }
+
+/* =========================================================
+   PORTFOLIO HIGHLIGHTS
+   ========================================================= */
+.highlights {
+  display: grid;
+  grid-template-columns: 0.8fr 1.6fr;
+  gap: 48px;
+  align-items: start;
+}
+.highlights h2 {
+  font-size: clamp(36px, 5vw, 72px);
+  position: sticky; top: 40px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+.tile {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  aspect-ratio: 1 / 1;
+  border: 1px solid var(--line);
+}
+.tile img { width: 100%; height: 100%; object-fit: cover; transition: transform .5s ease; }
+.tile:hover img { transform: scale(1.06); }
+.tile .label {
+  position: absolute; top: 12px; left: 12px;
+  background: rgba(10,10,10,0.7);
+  backdrop-filter: blur(4px);
+  border: 1px solid var(--line);
+  color: var(--gold);
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase; letter-spacing: 0.2em;
+  font-size: 11px; padding: 6px 10px; border-radius: 4px;
+}
+
+/* =========================================================
+   CONTACT / FOOTER
+   ========================================================= */
+.contact { text-align: center; padding: 90px 0; border-top: 1px solid var(--line); }
+.contact h2 { font-size: clamp(40px, 7vw, 96px); }
+.contact .cta {
+  display: inline-block; margin-top: 26px;
+  border: 1px solid var(--gold); color: var(--gold);
+  padding: 14px 34px; border-radius: 999px;
+  text-transform: uppercase; letter-spacing: 0.2em; font-size: 13px;
+  transition: .25s;
+}
+.contact .cta:hover { background: var(--gold); color: var(--bg); }
+
+footer {
+  border-top: 1px solid var(--line);
+  padding: 30px 0; color: var(--muted); font-size: 13px;
+}
+footer .wrap { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
+footer a:hover { color: var(--gold); }
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+@media (max-width: 860px) {
+  .about, .highlights { grid-template-columns: 1fr; }
+  .highlights h2 { position: static; }
+  .grid { grid-template-columns: repeat(2, 1fr); }
+  .hero-vertical { display: none; }
+  .polaroid { margin: 0 auto; }
+}
+@media (max-width: 520px) {
+  .grid { grid-template-columns: 1fr; }
+}
